@@ -1,10 +1,10 @@
 const overlay = document.querySelector(".overlay");
 const backToTopButton = document.querySelector("#backToTopButton");
-const closeButton = document.querySelector("#closeButton");
+const closeButton = document.querySelector("#modalCloseButton");
 const modalButton = document.querySelector("#seeMoreButton");
-const modeButton = document.querySelector("#modeButton");
+const modeButton = document.querySelector("#toggleModeButton");
 const body = document.body;
-const menuToggle = document.querySelector("#menuToggle");
+const menuToggle = document.querySelector("#mobileMenuToggle");
 const mobileMenu = document.querySelector("#mobileMenu");
 window.onscroll = function () {
     scrollFunction();

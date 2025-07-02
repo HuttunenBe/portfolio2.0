@@ -23,10 +23,10 @@
   </head>
   <body class="darkMode">
     <header>
-      <button aria-label="Switch colors button" id="modeButton">
+      <button aria-label="Switch colors button" id="toggleModeButton">
         Switch Color Mode
       </button>
-      <button aria-label="Open hamburger menu" id="menuToggle">
+      <button aria-label="Open hamburger menu" id="mobileMenuToggle">
         <span class="material-icons">menu</span>
       </button>
       <nav aria-label="Main navigation" id="desktopMenu">
@@ -46,25 +46,24 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="container">
-          <div class="heroContent">
+      <div class="container">
+        <section class="heroSectionContainer">
+          <div class="heroSectionContent">
             <h1>I'm Beniitta Huttunen</h1>
             <h2>A Web Developer Student</h2>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="containerAbout">
-          <div class="aboutPicture">
+        </section>
+
+        <section class="aboutSectionContainer">
+          <div class="aboutSectionPicture">
             <img
               alt="Profile Picture for About Section"
               loading="lazy"
               src="images/profile.jpeg"
-              id="profilePicture"
+              id="aboutSectionImage"
             />
           </div>
-          <div class="aboutParagraph">
+          <div class="aboutSectionText">
             <h2>About me</h2>
             <p>
               Hi! I’m Beniitta Huttunen, a Full Stack Web Development student at
@@ -80,15 +79,14 @@
               See more
             </button>
           </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="container">
-          <div class="projectContainer">
+        </section>
+
+        <section class="projectSectionContainer" >
+          <h2>Projects</h2>
+          <div class ="projectSectionContent">
+       
             <div class="project">
-              <a href="https://github.com/HuttunenBe/hrApp">
-                <a href="https://hr-app-dun.vercel.app/"></a>
+              <a href="https://hr-app-dun.vercel.app/">
                 <picture>
                   <source
                     media="(max-width: 640px)"
@@ -108,9 +106,11 @@
               </a>
               <h3>Hr App</h3>
               <p>Hr App React</p>
+              <a href="https://github.com/HuttunenBe/hrApp" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
+
             <div class="project">
-              <a href="https://github.com/HuttunenBe/eventsApp">
+              <a href="https://github.com/HuttunenBe/eventsApp" target="_blank" rel="noopener noreferrer">
                 <picture>
                   <source
                     media="(max-width: 640px)"
@@ -131,139 +131,139 @@
               <h3>Events App</h3>
               <p>Events App Laravel and React</p>
             </div>
+
             <div class="project">
-              <a href="https://github.com/HuttunenBe/pancakeMaker"></a>
-              <a href="https://github.com/HuttunenBe/hr_app_backend"></a>
-              <a
-                href="https://vercel.com/beniittas-projects/pancake-maker-vm8v"
-              ></a>
-              <picture>
-                <source
-                  media="(max-width: 640px)"
-                  srcset="images/project3Small.jpg"
-                />
-                <source
-                  media="(max-width: 1200px)"
-                  srcset="images/project3Medium.jpg"
-                />
-                <img
-                  alt="Project 3 image"
-                  loading="lazy"
-                  src="images/project3.webp"
-                  class="projectImage"
-                />
-              </picture>
+              <a href="https://vercel.com/beniittas-projects/pancake-maker-vm8v" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcset="images/project3Small.jpg"
+                  />
+                  <source
+                    media="(max-width: 1200px)"
+                    srcset="images/project3Medium.jpg"
+                  />
+                  <img
+                    alt="Project 3 image"
+                    loading="lazy"
+                    src="images/project3.webp"
+                    class="projectImage"
+                  />
+                </picture>
+              </a>
               <h3>Pancake App</h3>
               <p>Pancake order and management app Javascript</p>
+              <a href="https://github.com/HuttunenBe/pancakeMaker" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <a href="https://github.com/HuttunenBe/hr_app_backend" target="_blank" rel="noopener noreferrer">Backend Repo</a>
             </div>
+
             <div class="project">
-              <a
-                href="https://github.com/HuttunenBe/finnish_vocabulary_app"
-              ></a>
-              <picture>
-                <source
-                  media="(max-width: 640px)"
-                  srcset="images/project4Small.jpg"
-                />
-                <source
-                  media="(max-width: 1200px)"
-                  srcset="images/project4Medium.jpg"
-                />
-                <img
-                  alt="Project 4 image"
-                  loading="lazy"
-                  src="images/project4.jpg"
-                  class="projectImage"
-                />
-              </picture>
+              <a href="https://github.com/HuttunenBe/finnish_vocabulary_app" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcset="images/project4Small.jpg"
+                  />
+                  <source
+                    media="(max-width: 1200px)"
+                    srcset="images/project4Medium.jpg"
+                  />
+                  <img
+                    alt="Project 4 image"
+                    loading="lazy"
+                    src="images/project4.jpg"
+                    class="projectImage"
+                  />
+                </picture>
+              </a>
               <h3>Flashcard and Namecolor App</h3>
               <p>Laravel app that lets you ..</p>
             </div>
+     </div>
+     
+        </section>
+
+        <button aria-label="Back to top" id="backToTopButton">Back to top</button>
+
+        <div class="hidden overlay">
+          <div class="modalContent">
+            <h2>Beniitta Huttunen</h2>
+            <p>
+              What I enjoy most about programming is the challenge. I love
+              breaking problems down, figuring out solutions and even getting a
+              little frustrated. That’s part of the fun! For me web development
+              isn’t just a study. It’s something I genuinely love doing. I'm
+              driven by growth and making things better. Whether it's building
+              team spirit or figuring out most efficient way to write code. I’m
+              always open to new opportunities to learn, create and connect.
+            </p>
+            <button aria-label="Close modal button" id="modalCloseButton">
+              <span>✕</span>
+            </button>
           </div>
         </div>
-      </section>
-      <button aria-label="Back to top" id="backToTopButton">Back to top</button>
-      <div class="hidden overlay">
-        <div class="modal">
-          <h2>Beniitta Huttunen</h2>
-          <p>
-            What I enjoy most about programming is the challenge. I love
-            breaking problems down, figuring out solutions and even getting a
-            little frustrated. That’s part of the fun! For me web development
-            isn’t just a study. It’s something I genuinely love doing. I'm
-            driven by growth and making things better. Whether it's building
-            team spirit or figuring out most efficient way to write code. I’m
-            always open to new opportunities to learn, create and connect.
-          </p>
-          <button aria-label="Close modal button" id="closeButton">
-            <span class="cross">✕</span>
-          </button>
-        </div>
-      </div>
 
-      <section id="skills">
-        <div class="skillsContainer">
-          <h2>My Technical Skills</h2>
-          <p class="skillsIntro">
-            I specialize in full-stack web development with experience in both
-            frontend and backend technologies. Below are some of the key tools
-            and languages I work with:
-          </p>
-          <ul class="skillsList">
-            <li>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                alt="PHP"
-                class="skillIcon"
-              />
-              PHP
-            </li>
-            <li>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="React"
-                class="skillIcon"
-              />
-              React
-            </li>
-            <li>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
-                alt="Laravel"
-                class="skillIcon"
-              />
-              Laravel
-            </li>
-            <li>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-                class="skillIcon"
-              />
-              JavaScript
-            </li>
-            <li>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                alt="MySQL"
-                class="skillIcon"
-              />
-              MySQL
-            </li>
-          </ul>
-        </div>
-      </section>
+        <section class="skillsSectionContainer">
+            <h2>My Technical Skills</h2>
+            <p class="skillsSectionIntro">
+              I specialize in full-stack web development with experience in both
+              frontend and backend technologies. Below are some of the key tools
+              and languages I work with:
+            </p>
+            <ul class="skillsList">
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                  class="skillsIcon"
+                />
+                PHP
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                  class="skillsIcon"
+                />
+                React
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                  alt="Laravel"
+                  class="skillsIcon"
+                />
+                Laravel
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  class="skillsIcon"
+                />
+                JavaScript
+              </li>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                  class="skillsIcon"
+                />
+                MySQL
+              </li>
+            </ul>
+          </div>
+        </section>
 
-      <section class="contactSection">
-        <div class="container">
+        <section class="contactSectionContainer">
           <form
             action="https://formsubmit.co/beniittahuttunen@gmail.com"
             class="contactForm"
             method="POST"
           >
-            <div class="formContainer">
-              <div class="formGroup">
-                <h2 class="contactH2">Contact Me</h2>
+            <div class="contactFormWrapper">
+              <div class="contactFormGroup">
+                <h2>Contact Me</h2>
                 <label for="name">Your Name</label
                 ><input
                   id="name"
@@ -272,7 +272,7 @@
                   required
                 />
               </div>
-              <div class="formGroup">
+              <div class="contactFormGroup">
                 <label for="email">Your Email</label
                 ><input
                   id="email"
@@ -282,7 +282,7 @@
                   type="email"
                 />
               </div>
-              <div class="formGroup">
+              <div class="contactFormGroup">
                 <label for="message">Your Message</label
                 ><textarea
                   id="message"
@@ -291,23 +291,24 @@
                   required
                   rows="5"
                 ></textarea>
-                <button class="submitButton" type="submit">Send Message</button>
+                <button class="contactSubmitButton" type="submit">Send Message</button>
               </div>
             </div>
           </form>
-          <div class="socialLinks">
-            <a href="https://github.com/HuttunenBe" target="_blank">
-              <img src="images/github-icon.svg" alt="GitHub" class="icon" />
+          <div class="socialMediaLinks">
+            <a href="https://github.com/HuttunenBe" target="_blank" rel="noopener noreferrer">
+              <img src="images/github-icon.svg" alt="GitHub link" class="socialMediaIcon" />
             </a>
             <a
               href="https://www.linkedin.com/in/beniitta-huttunen-5b339432a/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <img src="images/linkedin-icon.svg" alt="LinkedIn" class="icon" />
+              <img src="images/linkedin-icon.svg" alt="LinkedIn link" class="socialMediaIcon" />
             </a>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <script src="main.js"></script>
   </body>
