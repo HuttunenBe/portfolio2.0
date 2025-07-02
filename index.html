@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="Welcome to my portfolio!" name="description" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Beniitta Huttunen's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body class="darkMode">
+    <header>
+      <button aria-label="Switch colors button" id="modeButton">
+        Switch Color Mode
+      </button>
+      <button aria-label="Open hamburger menu" id="menuToggle">
+        <span class="material-icons">menu</span>
+      </button>
+      <nav aria-label="Main navigation" id="desktopMenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contactSection">Contact me</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Mobile navigation bar" id="mobileMenu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contactSection">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="heroContent">
+            <h1>I'm Beniitta Huttunen</h1>
+            <h2>A Web Developer Student</h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="containerAbout">
+          <div class="aboutPicture">
+            <img
+              alt="Profile Picture for About Section"
+              loading="lazy"
+              src="images/profile.jpeg"
+              id="profilePicture"
+            />
+          </div>
+          <div class="aboutParagraph">
+            <h2>About me</h2>
+            <p>
+              Hi! I’m Beniitta Huttunen, a Full Stack Web Development student at
+              Business College Helsinki. My journey into web development started
+              with a love for problem solving and a desire to keep learning.
+              Before programming I worked in social services, where I developed
+              a deep passion for helping others. That experience taught me the
+              value of empathy, collaboration and creating impact through small
+              actions like positive feedback. Values I carry with me into the
+              field.
+            </p>
+            <button aria-label="Open modal button" id="seeMoreButton">
+              See more
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="container">
+          <div class="projectContainer">
+            <div class="project">
+              <a href="https://github.com/HuttunenBe/hrApp">
+                <a href="https://hr-app-dun.vercel.app/"></a>
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcset="images/project1Small.jpg"
+                  />
+                  <source
+                    media="(max-width: 1200px)"
+                    srcset="images/project1Medium.jpg"
+                  />
+                  <img
+                    alt="Project 1 image Pancake"
+                    loading="lazy"
+                    src="images/project1.webp"
+                    class="projectImage"
+                  />
+                </picture>
+              </a>
+              <h3>Hr App</h3>
+              <p>Hr App React</p>
+            </div>
+            <div class="project">
+              <a href="https://github.com/HuttunenBe/eventsApp">
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcset="images/project2Small.jpg"
+                  />
+                  <source
+                    media="(max-width: 1200px)"
+                    srcset="images/project2Medium.jpg"
+                  />
+                  <img
+                    alt="Project 2 image Little Zoo"
+                    loading="lazy"
+                    src="images/project2.jpg"
+                    class="projectImage"
+                  />
+                </picture>
+              </a>
+              <h3>Events App</h3>
+              <p>Events App Laravel and React</p>
+            </div>
+            <div class="project">
+              <a href="https://github.com/HuttunenBe/pancakeMaker"></a>
+              <a href="https://github.com/HuttunenBe/hr_app_backend"></a>
+              <a
+                href="https://vercel.com/beniittas-projects/pancake-maker-vm8v"
+              ></a>
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcset="images/project3Small.jpg"
+                />
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="images/project3Medium.jpg"
+                />
+                <img
+                  alt="Project 3 image"
+                  loading="lazy"
+                  src="images/project3.webp"
+                  class="projectImage"
+                />
+              </picture>
+              <h3>Pancake App</h3>
+              <p>Pancake order and management app Javascript</p>
+            </div>
+            <div class="project">
+              <a
+                href="https://github.com/HuttunenBe/finnish_vocabulary_app"
+              ></a>
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcset="images/project4Small.jpg"
+                />
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="images/project4Medium.jpg"
+                />
+                <img
+                  alt="Project 4 image"
+                  loading="lazy"
+                  src="images/project4.jpg"
+                  class="projectImage"
+                />
+              </picture>
+              <h3>Flashcard and Namecolor App</h3>
+              <p>Laravel app that lets you ..</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button aria-label="Back to top" id="backToTopButton">Back to top</button>
+      <div class="hidden overlay">
+        <div class="modal">
+          <h2>Beniitta Huttunen</h2>
+          <p>
+            What I enjoy most about programming is the challenge. I love
+            breaking problems down, figuring out solutions and even getting a
+            little frustrated. That’s part of the fun! For me web development
+            isn’t just a study. It’s something I genuinely love doing. I'm
+            driven by growth and making things better. Whether it's building
+            team spirit or figuring out most efficient way to write code. I’m
+            always open to new opportunities to learn, create and connect.
+          </p>
+          <button aria-label="Close modal button" id="closeButton">
+            <span class="cross">✕</span>
+          </button>
+        </div>
+      </div>
+
+      <section id="skills">
+        <div class="skillsContainer">
+          <h2>My Technical Skills</h2>
+          <p class="skillsIntro">
+            I specialize in full-stack web development with experience in both
+            frontend and backend technologies. Below are some of the key tools
+            and languages I work with:
+          </p>
+          <ul class="skillsList">
+            <li>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                alt="PHP"
+                class="skillIcon"
+              />
+              PHP
+            </li>
+            <li>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                class="skillIcon"
+              />
+              React
+            </li>
+            <li>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                alt="Laravel"
+                class="skillIcon"
+              />
+              Laravel
+            </li>
+            <li>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="skillIcon"
+              />
+              JavaScript
+            </li>
+            <li>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+                class="skillIcon"
+              />
+              MySQL
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contactSection">
+        <div class="container">
+          <form
+            action="https://formsubmit.co/beniittahuttunen@gmail.com"
+            class="contactForm"
+            method="POST"
+          >
+            <div class="formContainer">
+              <div class="formGroup">
+                <h2 class="contactH2">Contact Me</h2>
+                <label for="name">Your Name</label
+                ><input
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="formGroup">
+                <label for="email">Your Email</label
+                ><input
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  type="email"
+                />
+              </div>
+              <div class="formGroup">
+                <label for="message">Your Message</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  required
+                  rows="5"
+                ></textarea>
+                <button class="submitButton" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+          <div class="socialLinks">
+            <a href="https://github.com/HuttunenBe" target="_blank">
+              <img src="images/github-icon.svg" alt="GitHub" class="icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/beniitta-huttunen-5b339432a/"
+              target="_blank"
+            >
+              <img src="images/linkedin-icon.svg" alt="LinkedIn" class="icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

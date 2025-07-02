@@ -1,0 +1,504 @@
+@font-face {
+  font-family: "roboto";
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffccf2;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #2b083c;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434343;
+  padding: 1rem;
+}
+
+#menuToggle {
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#desktopMenu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#mobileMenu {
+  display: none;
+}
+
+#mobileMenu.active {
+  display: block;
+
+}
+
+nav a {
+  color: #f0f0f0;
+  font-weight: 400;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #03a9f4;
+}
+
+#modeButton {
+  background-color: #03a9f4;
+  border: none;
+  border-radius: 4px;
+  color: #121212;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#modeButton:hover {
+  background-color: #0288d1;
+  transform: scale(1.05);
+}
+
+.hero {
+  min-height: 400px;
+  padding: 7rem;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  color: #2b083c;
+  line-height: 1.9;
+}
+
+.heroContent h2 {
+  font-weight: 400;
+  color: #bbb;
+  font-size: 1.5rem;
+}
+
+.containerAbout {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  margin: 0 auto;
+  gap: 2rem;
+
+  line-height: 1.6;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+}
+
+.aboutPicture {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.aboutParagraph {
+  color: #e0e0e0;
+}
+
+.aboutParagraph p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.aboutParagraph h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #03a9f4;
+}
+
+#seeMoreButton {
+  background-color: transparent;
+  color: #03a9f4;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #03a9f4;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+#seeMoreButton:hover,
+#seeMoreButton:focus {
+  background-color: #03a9f4;
+  color: #121212;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#projects {
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.project {
+  text-align: center;
+  background-color: #1f1f1f;
+  width: 300px;
+
+  border-radius: 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #03a9f4;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.projectImage {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-radius: 1rem;
+
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.project p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+  color: #03a9f4;
+}
+
+#backToTopButton {
+  position: fixed;
+  background-color: #03a9f4;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 3rem;
+  color: #121212;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(3, 169, 244, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+#backToTopButton:hover,
+#backToTopButton:focus {
+  background-color: #0288d1;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(18, 18, 18, 0.85);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  background-color: #222;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(220, 3, 244, 0.7);
+}
+
+.modal h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #03a9f4;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+#closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.skillsContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#skills {
+  background-color: #c0c0c0;
+  color: black;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.skillsContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 600px;
+}
+
+.skillsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.skillsList li {
+  background-color: rgb(0, 128, 64);
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 1.4rem;
+  transition: transform 0.2s ease, background-color 0.9s ease;
+}
+
+.skillsList li:hover {
+  transform: scale(1.05);
+  background-color: blueviolet;
+}
+
+.skillsIntro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.skillIcon {
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.contactSection {
+  background-color: #1f1f1f;
+  padding: 3rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.contactH2 {
+  font-size: 2rem;
+  color: #03a9f4;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.6rem 0.8rem;
+  border-radius: 1rem;
+  border: 1.5px solid #555;
+  background-color: #121212;
+  color: #eee;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #03a9f4;
+}
+
+.submitButton {
+  background-color: #03a9f4;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  color: #121212;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: #072637;
+  transform: scale(1.02);
+  color: #ccc;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+
+  gap: 2rem;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.socialLinks a {
+  transition: transform 0.3s ease;
+}
+
+.socialLinks a:hover,
+.socialLinks a:focus {
+  transform: scale(1.1);
+  color: #03a9f4;
+}
+
+body.darkMode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.darkMode header {
+  background-color: #141414;
+  color: #f5bfff;
+}
+
+body.darkMode .containerAbout,
+body.darkMode .project {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+body.darkMode .contactSection,
+body.darkMode .modal {
+  background-color: #191919;
+  color: #fbb9ff;
+}
+
+body.darkMode #backToTopButton {
+  background-color: #9c45ca;
+  color: #121212;
+}
+
+body.darkMode .submitButton,
+body.darkMode #modeButton {
+  background-color: #03a9f4;
+  color: #121212;
+}
+
+body {
+  transition: background-color 0.7s ease, color 0.3s ease;
+}
+
+header,
+.project,
+.contactSection,
+.modal,
+.containerAbout {
+  transition: background-color 0.9s ease, color 0.6s ease;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  #desktopMenu {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    #menuToggle {
+        display: none;
+    }
+    #mobileMenu {
+        display: none;
+    }
+
+}
