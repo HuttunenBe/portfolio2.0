@@ -29,43 +29,87 @@
       <button aria-label="Open hamburger menu" id="mobileMenuToggle">
         <span class="material-icons">menu</span>
       </button>
-      <nav aria-label="Main navigation" id="desktopMenu">
+      <nav aria-label="Main navigation" id="desktopMenu" class="fadeIn reveal">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactSection">Contact me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
-      <nav aria-label="Mobile navigation bar" id="mobileMenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactSection">Contact me</a></li>
-        </ul>
-      </nav>
+    <nav aria-label="Mobile navigation bar" id="mobileMenu" class="fadeIn reveal">
+  <button aria-label="Close mobile menu button" id="mobileMenuCloseButton">
+    <span>✕</span>
+  </button>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact me</a></li>
+  </ul>
+</nav>
+
+      
     </header>
     <main>
       <div class="container">
-        <section class="heroSectionContainer">
-          <div class="heroSectionContent">
-            <h1>I'm Beniitta Huttunen</h1>
-            <h2>A Web Developer Student</h2>
-          </div>
-        </section>
+<section class="heroSectionContainer reveal fadeIn" id="hero">
+  <div class="heroSectionContent reveal fadeIn">
+   <h1 class="headerAnimation">
+  <span style="animation-delay: 0s">I</span>
+  <span style="animation-delay: 0.1s">'</span>
+  <span style="animation-delay: 0.11s">m</span>
+  <span style="animation-delay: 0.12s"> </span>
+  <span style="animation-delay: 0.13s">B</span>
+  <span style="animation-delay: 0.14s">e</span>
+  <span style="animation-delay: 0.15s">n</span>
+  <span style="animation-delay: 0.16s">i</span>
+  <span style="animation-delay: 0.17s">i</span>
+  <span style="animation-delay: 0.18s">t</span>
+  <span style="animation-delay: 0.19s">t</span>
+  <span style="animation-delay: 0.2s">a</span>
+  <span style="animation-delay: 0.22s"> </span>
+  <span style="animation-delay: 0.24s">H</span>
+  <span style="animation-delay: 0.26s">u</span>
+  <span style="animation-delay: 0.3s">t</span>
+  <span style="animation-delay: 0.35s">t</span>
+  <span style="animation-delay: 0.4s">u</span>
+  <span style="animation-delay: 0.45s">n</span>
+  <span style="animation-delay: 0.5s">e</span>
+  <span style="animation-delay: 1.2s" class="lastLetter">n</span>
+</h1>
 
-        <section class="aboutSectionContainer">
-          <div class="aboutSectionPicture">
+    <h2>A Web Developer Student</h2>
+    <div class="socialMediaLinks">
+            <a href="https://github.com/HuttunenBe" target="_blank" rel="noopener noreferrer">
+              <img src="images/githubIcon.png" alt="GitHub link" class="socialMediaIconHero" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/beniitta-huttunen-5b339432a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/linkedinIcon.png" alt="LinkedIn link" class="socialMediaIconHero" />
+            </a>
+          </div>
+  </div>
+</section>
+
+
+        <section class="aboutSectionContainer reveal fadeIn slideUp" id="about">
+          <div class="aboutSectionPicture reveal fadeIn slideUp">
             <img
               alt="Profile Picture for About Section"
               loading="lazy"
               src="images/profile.jpeg"
-              id="aboutSectionImage"
+              id="profilePicture"
+              class="reveal fadeIn slideUp"
             />
           </div>
-          <div class="aboutSectionText">
-            <h2>About me</h2>
-            <p>
+          <div class="aboutSectionText reveal fadeIn slideUp">
+            <h2 class="reveal fadeIn slideUp">About me</h2>
+            <p class="reveal fadeIn slideUp">
               Hi! I’m Beniitta Huttunen, a Full Stack Web Development student at
               Business College Helsinki. My journey into web development started
               with a love for problem solving and a desire to keep learning.
@@ -75,120 +119,135 @@
               actions like positive feedback. Values I carry with me into the
               field.
             </p>
-            <button aria-label="Open modal button" id="seeMoreButton">
+            <button
+              aria-label="Open modal button"
+              id="seeMoreButton"
+              class="reveal fadeIn slideUp"
+            >
               See more
             </button>
+            <a href="assets/cv.pdf" download="beniitta_huttunen_cv.pdf" id="cvButton">Download CV</a>
+
           </div>
         </section>
 
-        <section class="projectSectionContainer" >
-          <h2>Projects</h2>
-          <div class ="projectSectionContent">
-       
-            <div class="project">
-              <a href="https://hr-app-dun.vercel.app/">
+        <section class="projectSectionContainer reveal fadeIn" id="projects">
+          <h2 class="reveal fadeIn">Projects</h2>
+          <div class="projectSectionContent reveal fadeIn">
+            <div class="project reveal fadeIn">
+              <a href="https://hr-app-dun.vercel.app/" class="fadeIn reveal">
                 <picture>
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="images/project1Small.jpg"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    srcset="images/project1Medium.jpg"
-                  />
+                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
+                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
                   <img
                     alt="Project 1 image Pancake"
                     loading="lazy"
-                    src="images/project1.webp"
-                    class="projectImage"
+                    src="images/profile.jpeg"
+                    class="projectImage reveal fadeIn"
                   />
                 </picture>
               </a>
-              <h3>Hr App</h3>
-              <p>Hr App React</p>
-              <a href="https://github.com/HuttunenBe/hrApp" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <h3 class="reveal fadeIn">Hr App</h3>
+              <p class="reveal fadeIn">Hr App React</p>
+              <a
+                href="https://github.com/HuttunenBe/hrApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+                >GitHub Repo</a
+              >
             </div>
 
-            <div class="project">
-              <a href="https://github.com/HuttunenBe/eventsApp" target="_blank" rel="noopener noreferrer">
+            <div class="project reveal fadeIn">
+              <a
+                href="https://github.com/HuttunenBe/eventsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+              >
                 <picture>
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="images/project2Small.jpg"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    srcset="images/project2Medium.jpg"
-                  />
+                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
+                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
                   <img
                     alt="Project 2 image Little Zoo"
                     loading="lazy"
-                    src="images/project2.jpg"
-                    class="projectImage"
+                    src="images/profile.jpeg"
+                    class="projectImage reveal fadeIn"
                   />
                 </picture>
               </a>
-              <h3>Events App</h3>
-              <p>Events App Laravel and React</p>
+              <h3 class="reveal fadeIn">Events App</h3>
+              <p class="reveal fadeIn">Events App Laravel and React</p>
             </div>
 
-            <div class="project">
-              <a href="https://vercel.com/beniittas-projects/pancake-maker-vm8v" target="_blank" rel="noopener noreferrer">
+            <div class="project reveal fadeIn">
+              <a
+                href="https://vercel.com/beniittas-projects/pancake-maker-vm8v"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+              >
                 <picture>
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="images/project3Small.jpg"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    srcset="images/project3Medium.jpg"
-                  />
+                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
+                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
                   <img
                     alt="Project 3 image"
                     loading="lazy"
-                    src="images/project3.webp"
-                    class="projectImage"
+                    src="images/profile.jpeg"
+                    class="projectImage reveal fadeIn"
                   />
                 </picture>
               </a>
-              <h3>Pancake App</h3>
-              <p>Pancake order and management app Javascript</p>
-              <a href="https://github.com/HuttunenBe/pancakeMaker" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-              <a href="https://github.com/HuttunenBe/hr_app_backend" target="_blank" rel="noopener noreferrer">Backend Repo</a>
+              <h3 class="reveal fadeIn">Pancake App</h3>
+              <p class="reveal fadeIn">Pancake order and management app Javascript</p>
+              <a
+                href="https://github.com/HuttunenBe/pancakeMaker"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://github.com/HuttunenBe/hr_app_backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+                >Backend Repo</a
+              >
             </div>
 
-            <div class="project">
-              <a href="https://github.com/HuttunenBe/finnish_vocabulary_app" target="_blank" rel="noopener noreferrer">
+            <div class="project reveal fadeIn">
+              <a
+                href="https://github.com/HuttunenBe/finnish_vocabulary_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+              >
                 <picture>
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="images/project4Small.jpg"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    srcset="images/project4Medium.jpg"
-                  />
+                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
+                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
                   <img
                     alt="Project 4 image"
                     loading="lazy"
-                    src="images/project4.jpg"
-                    class="projectImage"
+                    src="images/profile.jpeg"
+                    class="projectImage reveal fadeIn"
                   />
                 </picture>
               </a>
-              <h3>Flashcard and Namecolor App</h3>
-              <p>Laravel app that lets you ..</p>
+              <h3 class="reveal fadeIn">Flashcard and Namecolor App</h3>
+              <p class="reveal fadeIn">Laravel app that lets you ..</p>
             </div>
-     </div>
-     
+          </div>
         </section>
 
-        <button aria-label="Back to top" id="backToTopButton">Back to top</button>
+        <button aria-label="Back to top" id="backToTopButton">
+          Back to top
+        </button>
 
-        <div class="hidden overlay">
-          <div class="modalContent">
-            <h2>Beniitta Huttunen</h2>
-            <p>
+        <div class="hidden overlay reveal fadeIn">
+          <div class="modalContent reveal fadeIn">
+            <h2 class="reveal fadeIn">Beniitta Huttunen</h2>
+            <p class="reveal fadeIn">
               What I enjoy most about programming is the challenge. I love
               breaking problems down, figuring out solutions and even getting a
               little frustrated. That’s part of the fun! For me web development
@@ -197,119 +256,138 @@
               team spirit or figuring out most efficient way to write code. I’m
               always open to new opportunities to learn, create and connect.
             </p>
-            <button aria-label="Close modal button" id="modalCloseButton">
+            <button aria-label="Close modal button" id="modalCloseButton" >
               <span>✕</span>
             </button>
           </div>
         </div>
 
-        <section class="skillsSectionContainer">
-            <h2>My Technical Skills</h2>
-            <p class="skillsSectionIntro">
-              I specialize in full-stack web development with experience in both
-              frontend and backend technologies. Below are some of the key tools
-              and languages I work with:
-            </p>
-            <ul class="skillsList">
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                  alt="PHP"
-                  class="skillsIcon"
-                />
-                PHP
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  alt="React"
-                  class="skillsIcon"
-                />
-                React
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
-                  alt="Laravel"
-                  class="skillsIcon"
-                />
-                Laravel
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                  class="skillsIcon"
-                />
-                JavaScript
-              </li>
-              <li>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  alt="MySQL"
-                  class="skillsIcon"
-                />
-                MySQL
-              </li>
-            </ul>
-          </div>
+        <section class="skillsSectionContainer reveal fadeIn" id="skills">
+          <h2 class="reveal fadeIn">My Technical Skills</h2>
+          <p class="skillsSectionIntro reveal fadeIn">
+            I specialize in full-stack web development with experience in both
+            frontend and backend technologies. Below are some of the key tools
+            and languages I work with:
+          </p>
+          <ul class="skillsList reveal fadeIn">
+            <li class="reveal fadeIn">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                alt="PHP"
+                class="skillsIcon reveal fadeIn"
+              />
+              PHP
+            </li>
+            <li class="reveal fadeIn">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                class="skillsIcon reveal fadeIn"
+              />
+              React
+            </li>
+            <li class="reveal fadeIn">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="skillsIcon reveal fadeIn"
+              />
+              JavaScript
+            </li>
+            <li class="reveal fadeIn">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+                class="skillsIcon reveal fadeIn"
+              />
+              HTML5
+            </li>
+            <li class="reveal fadeIn">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+                class="skillsIcon reveal fadeIn"
+              />
+              CSS3
+            </li>
+            <li class="reveal fadeIn">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                alt="Laravel"
+                class="skillsIcon reveal fadeIn"
+              />
+              Laravel
+            </li>
+          </ul>
         </section>
 
-        <section class="contactSectionContainer">
+   <section class="contactSectionContainer reveal fadeIn" id="contact">
           <form
-            action="https://formsubmit.co/beniittahuttunen@gmail.com"
+             action="https://formspree.io/f/mrbkdnag"
+  method="POST"
             class="contactForm"
-            method="POST"
+           
           >
             <div class="contactFormWrapper">
               <div class="contactFormGroup">
-                <h2>Contact Me</h2>
-                <label for="name">Your Name</label
-                ><input
+                <h2 class="reveal fadeIn">Contact Me</h2>
+                <label for="name" class="reveal fadeIn">Your name:</label>
+                <input
                   id="name"
                   name="name"
                   placeholder="Enter your name"
-                  required
+                 required class="reveal fadeIn"
                 />
               </div>
               <div class="contactFormGroup">
-                <label for="email">Your Email</label
-                ><input
+              <label for="email" class="reveal fadeIn">Email:</label>
+                <input
                   id="email"
                   name="email"
                   placeholder="Enter your email"
-                  required
+               required class="reveal fadeIn"
                   type="email"
                 />
               </div>
               <div class="contactFormGroup">
-                <label for="message">Your Message</label
-                ><textarea
+               <label for="message" class="reveal fadeIn">Your message:</label>
+                <textarea
                   id="message"
                   name="message"
                   placeholder="Write your message here..."
-                  required
+               required class="reveal fadeIn"
                   rows="5"
                 ></textarea>
-                <button class="contactSubmitButton" type="submit">Send Message</button>
+                <button class="contactSubmitButton" type="submit"  class="reveal fadeIn">Send Message</button>
               </div>
             </div>
           </form>
           <div class="socialMediaLinks">
             <a href="https://github.com/HuttunenBe" target="_blank" rel="noopener noreferrer">
-              <img src="images/github-icon.svg" alt="GitHub link" class="socialMediaIcon" />
+              <img src="images/githubIcon.png" alt="GitHub link" class="socialMediaIconContact reveal fadeIn" />
             </a>
             <a
               href="https://www.linkedin.com/in/beniitta-huttunen-5b339432a/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="images/linkedin-icon.svg" alt="LinkedIn link" class="socialMediaIcon" />
+              <img src="images/linkedinIcon.png" alt="LinkedIn link" class="socialMediaIconContact reveal fadeIn" />
             </a>
           </div>
         </section>
-      </div>
+      </div>    </div>    </div>
     </main>
+    <footer>
+         <nav aria-label="Footer navigation">
+        <ul>
+            <li><a href="#hero">Main</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
