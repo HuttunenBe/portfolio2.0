@@ -36,7 +36,6 @@ body {
   background-attachment: fixed;
   font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
   color: #240046;
   line-height: 1.6;
   opacity: 1;
@@ -86,7 +85,7 @@ header {
 
 button,
 a {
-  cursor: url("images/cursor/cursor.cur"), auto;
+  cursor: url("images/cursor/pinkCursor.cur"), auto;
 }
 
 #toggleModeButton {
