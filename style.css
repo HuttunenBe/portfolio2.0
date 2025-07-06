@@ -39,7 +39,7 @@ body {
   color: #240046;
   line-height: 1.6;
   opacity: 1;
-  transition: background-color 0.7s ease, color 0.3s ease;
+  transition: background-color 0.9s ease, color 0.3s ease;
 }
 
 body::before {
@@ -233,18 +233,15 @@ nav a {
 }
 
 .headerAnimation {
-  display: flex;
-  white-space: normal;
-  word-break: normal;
-  overflow-wrap: normal;
-  gap: 0.4rem;
   flex-wrap: wrap;
+  gap: 0.6rem;
+  letter-spacing: -3px;
 }
 
 .headerAnimation span {
-  /*letter-spacing: -0.8rem;*/
-  letter-spacing: -0.2rem;
   display: inline-block;
+  letter-spacing: -0.2rem;
+
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.4s forwards;
@@ -395,6 +392,8 @@ nav a {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #1f1f1f;
   width: 370px;
@@ -439,6 +438,10 @@ nav a {
 .project a:focus {
   text-decoration: none;
   color: #b38feb;
+}
+
+.projectLinks {
+  margin-top: auto;
 }
 
 .projectImage {
@@ -826,29 +829,24 @@ body.darkMode {
   color: #f0f0f0;
 }
 
-body.darkMode::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.553);
-  z-index: -1;
+body.darkMode::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(32, 10, 51, 0.905)),
+    url("images/backgrounds/background1Large.webp"),
+    url("images/backgrounds/backgroundBackup.webp");
 }
 
 body.darkMode header {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a86;
   color: #f5bfff;
 }
 
 body.darkMode .aboutSectionContainer {
-  background-color: #1a1a1a;
+  background-color: #0c0614b3;
   color: #f0f0f0;
 }
 
 body.darkMode .project {
-  background-color: #1a1a1a;
+  background-color: #1a1a1af0;
   color: #f0f0f0;
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
 }
@@ -859,7 +857,7 @@ body.darkMode .project:active {
 }
 
 body.darkMode .skillsSectionContainer {
-  background-color: #1a1a1a;
+  background-color: #1a1a1af0;
   color: #f0f0f0;
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
@@ -869,7 +867,7 @@ body.darkMode .skillsSectionIntro {
 }
 
 body.darkMode .contactSectionContainer {
-  background-color: #1a1a1a;
+  background-color: #0c06148b;
   color: #fbb9ff;
 }
 
@@ -881,7 +879,7 @@ body.darkMode .modalContent {
 
 body.darkMode #backToTopButton {
   background-color: #9c45ca;
-  color: #121212;
+  color: #f0f0f0;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
@@ -943,7 +941,6 @@ body.darkMode .project a:hover {
 
 body.darkMode .skillsList li {
   background-color: #9c45ca;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 body.darkMode .skillsList li:hover {
@@ -953,15 +950,19 @@ body.darkMode .skillsList li:hover {
 
 body.darkMode .contactFormGroup input,
 body.darkMode .contactFormGroup textarea {
-  border-color: #444;
+  border-color: #f18bf8;
   background-color: #0d0d0d;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 body.darkMode .contactFormGroup input:focus,
 body.darkMode .contactFormGroup textarea:focus {
   border-color: #b38feb;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+body.darkMode footer {
+  background-color: #09142b5e;
 }
 
 @media (max-width: 860px) {
@@ -1007,11 +1008,8 @@ body.darkMode .contactFormGroup textarea:focus {
   }
 
   .heroSectionContent h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 3px;
-    word-break: normal;
-    overflow-wrap: normal;
-    white-space: normal;
   }
 
   .heroSectionContent h2 {
@@ -1041,7 +1039,7 @@ body.darkMode .contactFormGroup textarea:focus {
 
   .project {
     width: 90%;
-    max-width: 320px;
+    max-width: 500px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.7s ease;
   }
@@ -1106,6 +1104,15 @@ body.darkMode .contactFormGroup textarea:focus {
     width: 80%;
     max-width: 250px;
   }
+  .socialMediaIconContact {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 680px) {
+  .heroSectionContent h1 {
+    font-size: 2.7rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1134,11 +1141,11 @@ body.darkMode .contactFormGroup textarea:focus {
   }
 
   .heroSectionContent h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .heroSectionContent h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .aboutSectionContainer {
@@ -1146,7 +1153,7 @@ body.darkMode .contactFormGroup textarea:focus {
     gap: 1.5rem;
   }
 
-  .aboutSectionImage {
+  .profileImage {
     width: 200px;
     height: 200px;
   }
@@ -1183,7 +1190,7 @@ body.darkMode .contactFormGroup textarea:focus {
   }
 
   .projectImage {
-    height: 160px;
+    height: 200px;
   }
 
   #backToTopButton {
@@ -1262,10 +1269,5 @@ body.darkMode .contactFormGroup textarea:focus {
   .socialMediaLinks {
     gap: 1.5rem;
     margin-top: 2rem;
-  }
-
-  .socialMediaIconContact {
-    width: 32px;
-    height: 32px;
   }
 }
