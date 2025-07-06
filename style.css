@@ -10,22 +10,44 @@ html {
 
 body {
   background-color: #f7f3fb;
-  background-image: url("images/backgroundBody.jpeg");
-  background-image: url("images/backgroundBody.jpeg");
+
+  background-image: url("images/backgrounds/background1Large.webp"),
+    url("images/backgrounds/backgroundBackup.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   color: #240046;
   line-height: 1.6;
+  animation: fadeZoomIn 2.5s ease-in-out;
+  transition: background-color 0.7s ease, color 0.3s ease;
+}
+
+body {
+  background-color: #f7f3fb;
+  background-image: url("images/backgrounds/background1Large.webp"),
+    url("images/backgrounds/backgroundBackup.webp");
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  color: #240046;
+  line-height: 1.6;
+  opacity: 1;
   transition: background-color 0.7s ease, color 0.3s ease;
 }
 
 body::before {
   position: fixed;
   content: "";
-  background-image: url("images/backgroundBody.jpeg");
+  background-image: url("images/backgrounds/background1Large.webp"),
+    url("images/backgrounds/backgroundBackup.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,9 +55,17 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: blur(8px);
-  opacity: 0.8;
+  /*filter: blur(1px);*/
+  opacity: 0;
   z-index: -1;
+  animation: fadeIn 3s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 0.1;
+  }
 }
 
 body::after {
@@ -53,9 +83,11 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #3f2e56;
+  background-color: #14015e68;
   padding: 1rem 1.7rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.9s ease, color 0.6s ease;
+  backdrop-filter: blur(20px);
 }
 
 #mobileMenuToggle {
@@ -69,9 +101,25 @@ header {
 }
 
 #desktopMenu ul {
-  list-style: none;
   display: flex;
-  gap: 2rem;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  font-family: "Poppins", "Segoe UI", "Lucida Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #f0e6ff;
+  text-decoration: none;
+}
+
+#desktopMenu ul li a {
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#desktopMenu ul li a:hover,
+#desktopMenu ul li a:focus {
+  font-size: 1.2rem;
+  color: #1e90ff;
 }
 
 #mobileMenu {
@@ -85,7 +133,7 @@ header {
   padding: 2rem 4rem;
   background-color: #3f2e56f4;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  z-index: 9999;
 }
 
 #mobileMenu.active {
@@ -110,7 +158,7 @@ header {
 
 nav a {
   color: #f0f0f0;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 0.5rem 1rem;
@@ -121,7 +169,6 @@ nav a:focus {
   color: #6a00b8;
   transform: translateY(-5px);
 }
-
 #toggleModeButton {
   background-color: #8338ec;
   border: none;
@@ -147,9 +194,10 @@ nav a:focus {
   justify-content: center;
   text-align: center;
   max-width: 1100px;
-  background-image: url("images/backgroundHero.jpeg");
+  background-image: url("images/backgrounds/background1Large.webp"),
+    url("images/backgrounds/backgroundBackup.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top left;
   position: relative;
   margin: 2rem auto;
   min-height: 450px;
@@ -157,6 +205,7 @@ nav a:focus {
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .heroSectionContainer::before {
@@ -167,6 +216,7 @@ nav a:focus {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
 }
 
 .heroSectionContent h1 {
@@ -174,6 +224,7 @@ nav a:focus {
   color: #fff;
   line-height: 1;
   margin-bottom: 0.8rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .lastLetter {
@@ -181,7 +232,8 @@ nav a:focus {
 }
 
 .headerAnimation span {
-  letter-spacing: -0.8rem;
+  /*letter-spacing: -0.8rem;*/
+  letter-spacing: -0.2rem;
   display: inline-block;
   opacity: 0;
   transform: translateY(20px);
@@ -212,6 +264,10 @@ nav a:focus {
   }
 }
 
+.accentLetters {
+  color: rgb(180, 63, 182);
+}
+
 .aboutSectionContainer {
   display: flex;
 
@@ -219,24 +275,26 @@ nav a:focus {
 
   max-width: 1100px;
 
-  background-color: #3f2e56;
-  /* background-image: url("images/backgroundBody.jpeg");*/
-  padding: 3rem 2rem;
+  background-color: #3f2e56e1;
+  /* background-image: url("images/backgroundBody.webp");*/
+
+  padding: 3rem 6rem;
   margin: 3rem auto;
   gap: 2rem;
   border-radius: 1.5rem;
   color: #e0e0e0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.9s ease, color 0.6s ease;
-   flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
-#profilePicture {
-  width: 250px;
-  height: 250px;
+#profileImage {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   object-fit: cover;
+
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   border: 5px solid #8338ec;
   transition: transform 2s ease;
@@ -247,6 +305,9 @@ nav a:focus {
 }
 
 .aboutSectionText {
+  /*background-color: #270d38bb;*/
+  padding: 1rem;
+  border-radius: 2rem;
   color: #e0e0e0;
   max-width: 500px;
   font-size: 1rem;
@@ -315,7 +376,7 @@ nav a:focus {
 .project {
   text-align: center;
   background-color: #1f1f1f;
-  width: 320px;
+  width: 370px;
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -348,6 +409,11 @@ nav a:focus {
   border-radius: 0.8rem;
   margin-bottom: 1rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+
+  max-width: 700px;
+  height: 300px;
+  border: 3px solid #ff69b4;
+  display: block;
 }
 
 .project p {
@@ -469,7 +535,8 @@ nav a:focus {
   max-width: 1000px;
 
   margin: 3rem auto;
-  background-color: #f7f3fb;
+  background-color: #f7f3fbc7;
+
   color: #240046;
   padding: 4rem 2rem;
   text-align: center;
@@ -607,14 +674,14 @@ nav a:focus {
 .socialMediaLinks {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   gap: 1rem;
 }
 
 .socialMediaIconHero {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   filter: invert(100%) brightness(1.2);
 }
 
@@ -636,20 +703,20 @@ nav a:focus {
 
 footer {
   background-color: #222;
+  background-color: #14015e68;
   padding: 2rem 1rem;
   color: #eee;
   font-size: 1rem;
   margin-top: 2rem;
-  border-top: 1px solid #444;
   text-align: center;
 }
 
 footer ul {
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 footer ul a:hover,
@@ -838,12 +905,31 @@ body.darkMode .contactFormGroup textarea:focus {
 }
 
 @media (max-width: 860px) {
+  /*body::before {
+    content: none;
+    display: none;
+  }*/
+
+  /*body::before {
+    filter: none;
+    opacity: 1;}*/
+
   footer {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    background-image: url("images/backgrounds/background1Medium.webp"),
+      url("images/backgrounds/backgroundBackup.webp");
+  }
+
+  body::before {
+    background-image: url("images/backgrounds/background1Medium.webp"),
+      url("images/backgrounds/backgroundBackup.webp");
+  }
+
   #desktopMenu {
     display: none;
   }
@@ -869,7 +955,6 @@ body.darkMode .contactFormGroup textarea:focus {
     max-width: 94vw;
     flex-direction: column;
     padding: 2rem 1.5rem;
-   
   } /*check*/
 
   .aboutSectionText {
@@ -949,6 +1034,15 @@ body.darkMode .contactFormGroup textarea:focus {
 }
 
 @media (max-width: 480px) {
+  body {
+    background-image: url("images/backgrounds/background1Small.webp"),
+      url("images/backgroungs/backgroundBackup.webp");
+  }
+
+  body::before {
+    background-image: url("images/backgrounds/background1Small.webp"),
+      url("images/backgrounds/backgroundBackup.webp");
+  }
   header {
     padding: 0.8rem 1rem;
   }
@@ -1096,8 +1190,8 @@ body.darkMode .contactFormGroup textarea:focus {
   }
 
   .socialMediaIconHero {
-    width: 32px;
-    height: 32px;
+    width: 12px;
+    height: 12px;
   }
 
   .socialMediaIconContact {
@@ -1105,5 +1199,3 @@ body.darkMode .contactFormGroup textarea:focus {
     height: 32px;
   }
 }
-
-

@@ -46,7 +46,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact me</a></li>
+    <li ><a href="#contact">Contact me</a></li>
   </ul>
 </nav>
 
@@ -64,33 +64,34 @@
   <span style="animation-delay: 0.13s">B</span>
   <span style="animation-delay: 0.14s">e</span>
   <span style="animation-delay: 0.15s">n</span>
-  <span style="animation-delay: 0.16s">i</span>
+  <span style="animation-delay: 0.30s">i</span>
   <span style="animation-delay: 0.17s">i</span>
   <span style="animation-delay: 0.18s">t</span>
-  <span style="animation-delay: 0.19s">t</span>
+  <span style="animation-delay: 0.49s">t</span>
   <span style="animation-delay: 0.2s">a</span>
-  <span style="animation-delay: 0.22s"> </span>
+  <span style="animation-delay: 0.30s"> </span>
   <span style="animation-delay: 0.24s">H</span>
   <span style="animation-delay: 0.26s">u</span>
   <span style="animation-delay: 0.3s">t</span>
-  <span style="animation-delay: 0.35s">t</span>
+  <span style="animation-delay: 0.70s">t</span>
   <span style="animation-delay: 0.4s">u</span>
   <span style="animation-delay: 0.45s">n</span>
   <span style="animation-delay: 0.5s">e</span>
-  <span style="animation-delay: 1.2s" class="lastLetter">n</span>
+  <span style="animation-delay: 1.5s" class="lastLetter">n</span>
 </h1>
 
-    <h2>A Web Developer Student</h2>
+ <h2>A<span class="accentLetters"> Web </span>Developer <span class="accentLetters">Student</span></h2>
+
     <div class="socialMediaLinks">
             <a href="https://github.com/HuttunenBe" target="_blank" rel="noopener noreferrer">
-              <img src="images/githubIcon.png" alt="GitHub link" class="socialMediaIconHero" />
+              <img src="images/icons/linkIcons/github.png" alt="GitHub link" class="socialMediaIconHero reveal fadeIn" />
             </a>
             <a
               href="https://www.linkedin.com/in/beniitta-huttunen-5b339432a/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="images/linkedinIcon.png" alt="LinkedIn link" class="socialMediaIconHero" />
+              <img src="images/icons/linkIcons/linkedin.png" alt="LinkedIn link" class="socialMediaIconHero reveal fadeIn" />
             </a>
           </div>
   </div>
@@ -98,14 +99,18 @@
 
 
         <section class="aboutSectionContainer reveal fadeIn slideUp" id="about">
-          <div class="aboutSectionPicture reveal fadeIn slideUp">
+          <div class="aboutSectionImage reveal fadeIn slideUp">
+            <picture>
+               <source srcset="images/profiles/profilePictureCyborg.webp" type="image/webp"/>
+                 <source srcset="images/profiles/profileLinkedin.webp" type="image/webp" />
             <img
-              alt="Profile Picture for About Section"
+              alt="Profile image for about section"
               loading="lazy"
-              src="images/profile.jpeg"
-              id="profilePicture"
+              src="images/profiles/profileOption.jpeg"
+              id="profileImage"
               class="reveal fadeIn slideUp"
             />
+            </picture>
           </div>
           <div class="aboutSectionText reveal fadeIn slideUp">
             <h2 class="reveal fadeIn slideUp">About me</h2>
@@ -113,6 +118,7 @@
               Hi! I’m Beniitta Huttunen, a Full Stack Web Development student at
               Business College Helsinki. My journey into web development started
               with a love for problem solving and a desire to keep learning.
+            <br><br/>
               Before programming I worked in social services, where I developed
               a deep passion for helping others. That experience taught me the
               value of empathy, collaboration and creating impact through small
@@ -126,7 +132,7 @@
             >
               See more
             </button>
-            <a href="assets/cv.pdf" download="beniitta_huttunen_cv.pdf" id="cvButton">Download CV</a>
+            <a href="assets/cv.pdf" download="cv.pdf" id="cvButton">Download CV</a>
 
           </div>
         </section>
@@ -135,27 +141,35 @@
           <h2 class="reveal fadeIn">Projects</h2>
           <div class="projectSectionContent reveal fadeIn">
             <div class="project reveal fadeIn">
-              <a href="https://hr-app-dun.vercel.app/" class="fadeIn reveal">
-                <picture>
-                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
-                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
-                  <img
-                    alt="Project 1 image Pancake"
-                    loading="lazy"
-                    src="images/profile.jpeg"
-                    class="projectImage reveal fadeIn"
-                  />
-                </picture>
-              </a>
+
+                <noscript>     <img src="images/projects/hrAppBackup.webp" alt="HR App Backup" class="projectImage reveal fadeIn" />
+</noscript>
+              
+     <iframe
+  src="https://hr-app-dun.vercel.app/"
+  title="HR App"
+  loading="lazy"
+    class="projectImage reveal fadeIn"
+
+></iframe>
               <h3 class="reveal fadeIn">Hr App</h3>
-              <p class="reveal fadeIn">Hr App React</p>
+              <p class="reveal fadeIn"> HR app made with React to manage employee profiles with add, edit and view features. It has a responsive design and personalized department visuals.</p>
               <a
                 href="https://github.com/HuttunenBe/hrApp"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="reveal fadeIn"
-                >GitHub Repo</a
+                >GitHub Link</a
               >
+       <a
+  href="https://hr-app-dun.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="reveal fadeIn"
+>
+  Deploy Link
+</a>
+
             </div>
 
             <div class="project reveal fadeIn">
@@ -165,41 +179,53 @@
                 rel="noopener noreferrer"
                 class="reveal fadeIn"
               >
+
+              
                 <picture>
-                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
-                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
+            <source srcset="images/projects/eventsProject.webp" type="image/webp" />
+
                   <img
-                    alt="Project 2 image Little Zoo"
+                    alt="Events App"
                     loading="lazy"
-                    src="images/profile.jpeg"
+                    src="images/projects/eventsProjectBackup.png"
                     class="projectImage reveal fadeIn"
                   />
                 </picture>
+                
               </a>
               <h3 class="reveal fadeIn">Events App</h3>
-              <p class="reveal fadeIn">Events App Laravel and React</p>
-            </div>
-
-            <div class="project reveal fadeIn">
-              <a
-                href="https://vercel.com/beniittas-projects/pancake-maker-vm8v"
+              <p class="reveal fadeIn">An event management app built with React that include multiple features like lets users view, filter and explore upcoming events. Multi pages ____. It features responsive design.</p>
+                     <a
+                href="https://github.com/HuttunenBe/eventsApp"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="reveal fadeIn"
+                >Github Repo</a
               >
-                <picture>
-                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
-                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
-                  <img
-                    alt="Project 3 image"
-                    loading="lazy"
-                    src="images/profile.jpeg"
-                    class="projectImage reveal fadeIn"
-                  />
-                </picture>
-              </a>
+                     <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+                >Deploy link</a
+              >
+            </div>
+
+            <div class="project reveal fadeIn">
+<noscript>
+  <img src="images/projects/pancakeProjectBackup.webp" alt="Pancake App Backup" class="projectImage reveal fadeIn" />
+</noscript>
+
+<iframe
+  src="https://pancake-maker-xi.vercel.app/indexManagement.html"
+  title="Pancake App"
+  loading="lazy"
+  class="projectImage reveal fadeIn"
+></iframe>
+
+
               <h3 class="reveal fadeIn">Pancake App</h3>
-              <p class="reveal fadeIn">Pancake order and management app Javascript</p>
+              <p class="reveal fadeIn">a pancake order and management app built with Javascript. With this app you can order and manage pancakes menu. The app lets you choose from multiple options and showcase price live. In management you can delete and search__.</p>
               <a
                 href="https://github.com/HuttunenBe/pancakeMaker"
                 target="_blank"
@@ -207,13 +233,14 @@
                 class="reveal fadeIn"
                 >GitHub Repo</a
               >
-              <a
-                href="https://github.com/HuttunenBe/hr_app_backend"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="reveal fadeIn"
-                >Backend Repo</a
-              >
+           <a
+  href="https://pancake-maker-xi.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="reveal fadeIn"
+>
+  Deploy Link
+</a>
             </div>
 
             <div class="project reveal fadeIn">
@@ -224,18 +251,33 @@
                 class="reveal fadeIn"
               >
                 <picture>
-                  <source media="(max-width: 640px)" srcset="images/profile.jpeg" />
-                  <source media="(max-width: 1200px)" srcset="images/profile.jpeg" />
+                    <source srcset="images/projects/flashcardProject.webp" type="image/webp" />
+
                   <img
-                    alt="Project 4 image"
+                    alt="Flashcard and Namecolor App"
                     loading="lazy"
-                    src="images/profile.jpeg"
+                    src="images/flashcardsBackup.png"
                     class="projectImage reveal fadeIn"
                   />
                 </picture>
-              </a>
+           </a>
               <h3 class="reveal fadeIn">Flashcard and Namecolor App</h3>
-              <p class="reveal fadeIn">Laravel app that lets you ..</p>
+              <p class="reveal fadeIn">A simple Laravel and React flashcard app that lets users flip between Finnish and English words, save favorites and manage a list of people and their favorite colors.</p>
+                          <a
+                href="https://github.com/HuttunenBe/finnish_vocabulary_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+                >Github repo</a
+              >
+                     <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="reveal fadeIn"
+                >Deploy Link</a
+              >
+              </a>
             </div>
           </div>
         </section>
@@ -272,23 +314,25 @@
           <ul class="skillsList reveal fadeIn">
             <li class="reveal fadeIn">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                src="images/icons/techIcons/php.svg"
                 alt="PHP"
                 class="skillsIcon reveal fadeIn"
+            
               />
               PHP
             </li>
             <li class="reveal fadeIn">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                src="images/icons/techIcons/react.svg"
                 alt="React"
                 class="skillsIcon reveal fadeIn"
+              
               />
               React
             </li>
             <li class="reveal fadeIn">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                src="images/icons/techIcons/javascript.png"
                 alt="JavaScript"
                 class="skillsIcon reveal fadeIn"
               />
@@ -296,27 +340,37 @@
             </li>
             <li class="reveal fadeIn">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt="HTML5"
+                src="images/icons/techIcons/html.svg"
+                alt="HTML"
                 class="skillsIcon reveal fadeIn"
               />
               HTML5
             </li>
             <li class="reveal fadeIn">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="CSS3"
+                src="images/icons/techIcons/css.svg"
+                alt="CSS"
                 class="skillsIcon reveal fadeIn"
               />
-              CSS3
+              CSS
             </li>
             <li class="reveal fadeIn">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                src="images/icons/techIcons/laravel.svg"
                 alt="Laravel"
                 class="skillsIcon reveal fadeIn"
+          
               />
               Laravel
+            </li>
+                <li class="reveal fadeIn">
+              <img
+                src="images/icons/techIcons/mysql.svg"
+                alt="MySQL"
+                class="skillsIcon reveal fadeIn"
+            
+              />
+              MySQL
             </li>
           </ul>
         </section>
@@ -364,14 +418,14 @@
           </form>
           <div class="socialMediaLinks">
             <a href="https://github.com/HuttunenBe" target="_blank" rel="noopener noreferrer">
-              <img src="images/githubIcon.png" alt="GitHub link" class="socialMediaIconContact reveal fadeIn" />
+              <img src="images/icons/linkIcons/github.png" alt="GitHub link" class="socialMediaIconContact reveal fadeIn" />
             </a>
             <a
               href="https://www.linkedin.com/in/beniitta-huttunen-5b339432a/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="images/linkedinIcon.png" alt="LinkedIn link" class="socialMediaIconContact reveal fadeIn" />
+              <img src="images/icons/linkIcons/linkedin.png" alt="LinkedIn link" class="socialMediaIconContact reveal fadeIn" />
             </a>
           </div>
         </section>
