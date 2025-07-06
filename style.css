@@ -86,6 +86,8 @@ header {
 button,
 a {
   cursor: url("images/cursor/pinkCursor.cur"), auto;
+  font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
 }
 
 #toggleModeButton {
@@ -94,8 +96,9 @@ a {
   border-radius: 2rem;
   color: white;
   padding: 0.6rem 1.2rem;
-
-  font-weight: 600;
+  font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-weight: 800;
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
 }
@@ -105,6 +108,7 @@ a {
   background-color: #6a00b8;
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
 }
 
 #mobileMenuToggle {
@@ -113,7 +117,6 @@ a {
   border: none;
   color: #f0f0f0;
   font-size: 2rem;
-
   padding: 0.5rem;
 }
 
@@ -122,7 +125,8 @@ a {
   list-style: none;
   gap: 1.5rem;
   font-size: 0.9rem;
-  font-family: "Poppins", "Segoe UI", "Lucida Sans", sans-serif;
+  /*font-family: "Poppins", "Segoe UI", "Lucida Sans", sans-serif;
+  */
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #f0e6ff;
@@ -166,7 +170,6 @@ a {
   font-size: 1.1rem;
   font-weight: 600;
   gap: 1.2rem;
-
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -225,7 +228,17 @@ nav a {
   color: #fff;
   line-height: 1;
   margin-bottom: 0.8rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
+
+.headerAnimation {
+  display: flex;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  gap: 0.4rem;
+  flex-wrap: wrap;
 }
 
 .headerAnimation span {
@@ -247,6 +260,7 @@ nav a {
 .lastLetter,
 .accentLetters {
   color: rgb(180, 63, 182);
+  color: #e209ed;
   transition: color 0.3s ease;
 }
 
@@ -274,14 +288,10 @@ nav a {
 
 .aboutSectionContainer {
   display: flex;
-
   align-items: center;
-
   max-width: 1100px;
-
   background-color: #3f2e56e1;
   /* background-image: url("images/backgroundBody.webp");*/
-
   padding: 3rem 6rem;
   margin: 3rem auto;
   gap: 2rem;
@@ -298,7 +308,6 @@ nav a {
   object-fit: cover;
   border-radius: 50%;
   object-fit: cover;
-
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   border: 5px solid #8338ec;
   transition: transform 9s ease;
@@ -320,6 +329,8 @@ nav a {
 }
 
 .aboutSectionText h2 {
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   margin-bottom: 1rem;
   font-size: 2.5rem;
   font-weight: 700;
@@ -336,7 +347,6 @@ nav a {
   border: 2px solid #8338ec;
   border-radius: 2rem;
   font-weight: 700;
-
   transition: all 0.4s ease;
   margin: 0.3rem;
   margin-top: 1rem;
@@ -350,6 +360,7 @@ nav a {
   color: #fff;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
   transform: scale(1.09);
+  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
 }
 
 #cvButton:hover,
@@ -358,6 +369,7 @@ nav a {
   color: #fff;
   outline: none;
   transform: scale(1.09);
+  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
 }
 
 .projectSectionContainer {
@@ -366,6 +378,8 @@ nav a {
 
 .projectSectionContainer h2 {
   text-align: center;
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   margin-bottom: 2.5rem;
   font-size: 2.8rem;
   color: #8338ec;
@@ -391,12 +405,15 @@ nav a {
 }
 
 .project:hover {
-  transform: translateY(-8px);
+  transform: translateY(-18px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 .project h3 {
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   margin-bottom: 0.8rem;
+  text-transform: uppercase;
   color: #8338ec;
   font-size: 1.5rem;
 }
@@ -410,6 +427,8 @@ nav a {
 
 .project a {
   text-decoration: none;
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   color: #8338ec;
   font-weight: 600;
   margin-top: 0.5rem;
@@ -429,7 +448,6 @@ nav a {
   border-radius: 0.8rem;
   margin-bottom: 1rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-
   max-width: 700px;
   height: 300px;
   border: 3px solid #ff69b4;
@@ -466,6 +484,8 @@ nav a {
 }
 
 .modalContent h2 {
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -499,19 +519,13 @@ nav a {
   transform: rotate(90deg);
 }
 
-.skillsSectionContainer h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
-  color: #8338ec;
-  font-weight: 700;
-}
-
 .skillsSectionContainer {
   max-width: 1000px;
 
   margin: 3rem auto;
   background-color: #f7f3fbc7;
-
+  background-color: #2d56fbb4;
+  background-color: #aa88fff7;
   color: #240046;
   padding: 4rem 2rem;
   text-align: center;
@@ -522,17 +536,34 @@ nav a {
   flex-wrap: wrap;
 }
 
+.skillsSectionContainer h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #1f1ff1;
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
+
+.skillsSectionContainer p {
+  color: #f0eaf9;
+}
+
 .skillsList {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
   gap: 1.5rem;
+  font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   list-style: none;
   flex-wrap: wrap;
 }
 
 .skillsList li {
   background-color: #8338ec;
+  background-color: #e572e9;
+  background-color: #c84dee;
   padding: 0.8rem 1.6rem;
   font-weight: 700;
   color: white;
@@ -570,6 +601,7 @@ nav a {
   justify-content: center;
   max-width: 500px;
   background-color: #1f1f1f;
+  background-color: #3f2e56e1;
 
   padding: 4rem 2rem;
   border-radius: 1rem;
@@ -583,6 +615,8 @@ nav a {
 }
 
 .contactFormGroup h2 {
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   font-size: 2.5rem;
   color: #8338ec;
   margin-bottom: 2rem;
@@ -627,6 +661,8 @@ nav a {
   background-color: #121212;
   color: #eee;
   font-size: 1rem;
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -653,6 +689,7 @@ nav a {
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
 }
 
 .contactSubmitButton:hover,
@@ -690,7 +727,6 @@ nav a {
 .socialMediaLinks a:hover,
 .socialMediaLinks a:focus {
   transform: scale(1.1);
-  color: #03a9f4;
 }
 
 #backToTopButton {
@@ -732,6 +768,7 @@ footer ul {
   justify-content: center;
   font-size: 1.2rem;
   list-style: none;
+  text-transform: uppercase;
   gap: 1rem;
 }
 
@@ -971,6 +1008,10 @@ body.darkMode .contactFormGroup textarea:focus {
 
   .heroSectionContent h1 {
     font-size: 2.5rem;
+    letter-spacing: 3px;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
   }
 
   .heroSectionContent h2 {
