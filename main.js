@@ -76,7 +76,6 @@ const revealOnScroll = () => {
 
 backToTopButton.addEventListener("click", backToTop);
 modalButton.addEventListener("click", displayElement);
-
 closeButton.addEventListener("click", displayElement);
 modeButton.addEventListener("click", toggleLightSwitch);
 window.addEventListener("scroll", revealOnScroll);
