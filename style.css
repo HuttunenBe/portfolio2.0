@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/*body {
   background-color: #f7f3fb;
 
   background-image: url("images/backgrounds/background1Large.webp"),
@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
+  /*background-attachment: fixed;*/ /*
   font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
@@ -24,7 +24,7 @@ body {
   line-height: 1.6;
   animation: fadeZoomIn 2.5s ease-in-out;
   transition: background-color 0.7s ease, color 0.3s ease;
-}
+}*/
 
 body {
   background-color: #f7f3fb;
@@ -57,7 +57,7 @@ body::before {
   bottom: 0;
   /*filter: blur(1px);*/
   opacity: 0;
-  z-index: -1;
+  /*z-index: -1;* menu*/
   animation: fadeIn 3s forwards;
   animation-delay: 2s;
 }
@@ -151,7 +151,7 @@ a {
   padding: 2rem 4rem;
   background-color: #3f2e56f4;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
+  z-index: 99;
 }
 
 #mobileMenu.active {
@@ -211,7 +211,6 @@ nav a:focus {
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  z-index: -1;
 }
 
 .heroSectionContainer::before {
@@ -222,7 +221,6 @@ nav a:focus {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
 }
 
 .heroSectionContent h1 {
@@ -943,6 +941,10 @@ body.darkMode .contactFormGroup textarea:focus {
     display: block;
   }
 
+  .socialMediaIconHero {
+    z-index: 10;
+  }
+
   .heroSectionContainer {
     min-height: 350px;
   }
@@ -1192,11 +1194,6 @@ body.darkMode .contactFormGroup textarea:focus {
   .socialMediaLinks {
     gap: 1.5rem;
     margin-top: 2rem;
-  }
-
-  .socialMediaIconHero {
-    width: 12px;
-    height: 12px;
   }
 
   .socialMediaIconContact {
