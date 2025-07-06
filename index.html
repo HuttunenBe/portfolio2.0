@@ -45,7 +45,7 @@
     <nav
       aria-label="Mobile navigation bar"
       id="mobileMenu"
-      class="fadeIn reveal"
+  
     >
       <button aria-label="Close mobile menu button" id="mobileMenuCloseButton">
         <span>✕</span>
@@ -116,7 +116,7 @@
           </div>
         </section>
         <section class="aboutSectionContainer reveal fadeIn slideUp" id="about">
-          <div class="aboutSectionImage reveal fadeIn slideUp">
+          <div class="aboutSectionImage">
             <picture>
               <source
                 srcset="images/profiles/profilePictureCyborg.webp"
@@ -131,7 +131,7 @@
                 loading="lazy"
                 src="images/profiles/profileOption.jpeg"
                 id="profileImage"
-                class="reveal fadeIn slideUp"
+          
               />
             </picture>
           </div>
@@ -146,7 +146,7 @@ I’ve always been someone who puts both quality and heart into everything I do.
             <button
               aria-label="Open modal button"
               id="seeMoreButton"
-              class="reveal fadeIn slideUp"
+              rel="noopener noreferrer"
             >
               See more
             </button>
@@ -155,6 +155,7 @@ I’ve always been someone who puts both quality and heart into everything I do.
               target="_blank"
               rel="noopener noreferrer"
               id="cvButton"
+              
             >
               CV
             </a>
@@ -162,10 +163,10 @@ I’ve always been someone who puts both quality and heart into everything I do.
           
         </section>
 
-                <div class="hidden overlay reveal fadeIn">
-          <div class="modalContent reveal fadeIn">
-            <h2 class="reveal fadeIn">Beniitta Huttunen</h2>
-            <p class="reveal fadeIn">
+                <div class="hidden overlay ">
+          <div class="modalContent ">
+            <h2>Beniitta Huttunen</h2>
+            <p>
 
 What really draws me to web development is how it’s always changing. There’s always something new to learn and new problems to figure out. If coding were easy, I probably wouldn’t enjoy it as much. It’s the challenge that keeps me going.
   <br></br>
@@ -181,7 +182,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
         <section class="projectSectionContainer reveal fadeIn" id="projects">
           <h2 class="reveal fadeIn">Projects</h2>
           <div class="projectSectionContent reveal fadeIn">
-            <div class="project reveal fadeIn">
+            <div class="project">
               <noscript>
                 <img
                   src="images/projects/hrAppBackup.webp"
@@ -214,7 +215,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
                 Deploy Link
               </a>
             </div>
-            <div class="project reveal fadeIn">
+            <div class="project">
               <a
                 href="https://github.com/HuttunenBe/eventsApp"
                 target="_blank"
@@ -253,7 +254,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
                 >Deploy link</a
               >
             </div>
-            <div class="project reveal fadeIn">
+            <div class="project">
               <noscript>
                 <img
                   src="images/projects/pancakeProjectBackup.webp"
@@ -288,7 +289,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
                 Deploy Link
               </a>
             </div>
-            <div class="project reveal fadeIn">
+            <div class="project">
               <a
                 href="https://github.com/HuttunenBe/finnish_vocabulary_app"
                 target="_blank"
@@ -345,7 +346,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
               />
               PHP
             </li>
-            <li class="reveal fadeIn">
+            <li>
               <img
                 src="images/icons/techIcons/react.svg"
                 alt="React"
@@ -361,7 +362,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
               />
               JavaScript
             </li>
-            <li class="reveal fadeIn">
+            <li>
               <img
                 src="images/icons/techIcons/html.svg"
                 alt="HTML"
@@ -377,7 +378,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
               />
               CSS
             </li>
-            <li class="reveal fadeIn">
+            <li>
               <img
                 src="images/icons/techIcons/laravel.svg"
                 alt="Laravel"
@@ -410,7 +411,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
                   name="name"
                   placeholder="Enter your name"
                   required
-                  class="reveal fadeIn"
+             
                 />
               </div>
               <div class="contactFormGroup">
@@ -420,7 +421,7 @@ Now I bring that same mindset into web development, combining curiosity, empathy
                   name="email"
                   placeholder="Enter your email"
                   required
-                  class="reveal fadeIn"
+                
                   type="email"
                 />
               </div>
@@ -431,10 +432,10 @@ Now I bring that same mindset into web development, combining curiosity, empathy
                   name="message"
                   placeholder="Write your message here..."
                   required
-                  class="reveal fadeIn"
+              
                   rows="5"
                 ></textarea>
-                <button class="contactSubmitButton reveal fadeIn" type="submit">
+                <button class="contactSubmitButton" type="submit">
                   Send Message
                 </button>
               </div>
@@ -471,8 +472,8 @@ Now I bring that same mindset into web development, combining curiosity, empathy
         </button>
       </div>
     </main>
-    <footer>
-      <nav aria-label="Footer navigation">
+<footer class="reveal fadeIn slideUp">
+      <nav aria-label="Footer navigation" >
         <ul>
           <li><a href="#hero">Main</a></li>
           <li><a href="#about">About</a></li>
