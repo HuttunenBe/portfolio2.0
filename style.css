@@ -55,9 +55,9 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  /*filter: blur(1px);*/
+  filter: blur(1px);
   opacity: 0;
-  /*z-index: -1;* menu*/
+  z-index: -1;
   animation: fadeIn 3s forwards;
   animation-delay: 2s;
 }
@@ -487,7 +487,7 @@ nav a {
   position: relative;
   background-color: #222;
   padding: 2.5rem;
-  max-width: 650px;
+  max-width: 700px;
   width: 95%;
   border-radius: 1rem;
   color: #ffffff;
@@ -507,16 +507,17 @@ nav a {
 .modalContent p {
   font-size: 1rem;
   line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 #modalCloseButton,
 #mobileMenuCloseButton {
   position: absolute;
-  top: 0.1rem;
+  top: 0.3rem;
   right: 1rem;
   background: none;
   border: none;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: #f0f0f0;
 
   transition: color 0.3s ease, transform 0.2s ease;
@@ -986,6 +987,18 @@ body.darkMode footer {
 
   footer {
     display: none;
+  }
+
+  .modalContent {
+    max-width: 90vw;
+    margin-top: 2rem;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+
+  #modalCloseButton {
+    top: 1rem;
   }
 }
 
