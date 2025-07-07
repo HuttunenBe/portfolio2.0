@@ -34,9 +34,8 @@ body {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Manrope", "Space Grotesk", "Roboto", "Lucida Sans",
-    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
-    Verdana, sans-serif;
+  font-family: "Manrope", "Space Grotesk", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #240046;
   line-height: 1.6;
   opacity: 1;
@@ -129,6 +128,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #f0e6ff;
+
   text-decoration: none;
 }
 
@@ -580,7 +580,8 @@ nav a {
   padding: 0.8rem 1.6rem;
   font-weight: 500;
   color: white;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", "roboto", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 2rem;
   background-color: 0.3s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -975,6 +976,16 @@ body.darkMode footer {
   background-color: #09142b5e;
 }
 
+@media (max-width: 980px) {
+  #desktopMenu {
+    display: none;
+  }
+
+  #mobileMenuToggle {
+    display: block;
+  }
+}
+
 @media (max-width: 860px) {
   /*body::before {
     content: none;
@@ -984,10 +995,6 @@ body.darkMode footer {
   /*body::before {
     filter: none;
     opacity: 1;}*/
-
-  footer {
-    display: none;
-  }
 
   .modalContent {
     max-width: 90vw;
@@ -1000,6 +1007,10 @@ body.darkMode footer {
   #modalCloseButton {
     top: 1rem;
   }
+
+  footer {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1011,14 +1022,6 @@ body.darkMode footer {
   body::before {
     background-image: url("images/backgrounds/background1Medium.webp"),
       url("images/backgrounds/backgroundBackup.webp");
-  }
-
-  #desktopMenu {
-    display: none;
-  }
-
-  #mobileMenuToggle {
-    display: block;
   }
 
   .socialMediaIconHero {
