@@ -8,10 +8,12 @@
     <title>Beniitta Huttunen's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lobster&family=Manrope:wght@200..800&family=Orbitron:wght@400..900&family=Pathway+Gothic+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500&family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;500&family=Roboto:wght@400&display=swap"
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
@@ -118,17 +120,17 @@
           <div class="aboutSectionImage">
             <picture>
               <source
-                srcset="images/profiles/profilePurple.webp"
+                srcset="images/profiles/profileImage.webp"
                 type="image/webp"
               />
               <source
-                srcset="images/profiles/profileLinkedin.webp"
+                srcset="images/profiles/profileBackup.webp"
                 type="image/webp"
               />
               <img
                 alt="Profile image for about section"
                 loading="lazy"
-                src="images/profiles/profileOption.jpeg"
+                src="images/profiles/profileBackup2.jpeg"
                 id="profileImage"
               />
             </picture>
@@ -140,41 +142,46 @@
               a full stack web development student.
             </p>
             <p>
-              My journey began when I realized that problem solving is my
-              biggest motivator. That led me to web development studies and late
-              night coding sessions filled with errors, difficulties,
-              breakthroughs and a growing love for programming. With each
-              problem I solve, I feel more confident that I’m on the right path.
+              My journey into web development began when I realized that problem
+              solving is my biggest motivator. That led me to web development
+              studies and late night coding sessions filled with errors,
+              difficulties, breakthroughs and a growing love for programming.
             </p>
-            <button
-              aria-label="Open modal button"
-              id="seeMoreButton"
-              rel="noopener noreferrer"
-            >
-              Read More
-            </button>
-            <a
-              href="assets/beniittaHuttunenCv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="cvButton"
-            >
-              View Cv
-            </a>
-            <a
-              href="assets/beniittaHuttunenCv.pdf"
-              download="beniittaHuttunenCV.pdf"
-              class="cvButton"
-              class="reveal fadeIn"
-            >
-              Download CV
-            </a>
+            <p>
+              With each problem I solve, I feel more confident that I’m on the
+              right path.
+            </p>
+            <div class="aboutSectionButtons">
+              <button
+                aria-label="Open modal button"
+                id="seeMoreButton"
+                rel="noopener noreferrer"
+              >
+                Read More
+              </button>
+              <a
+                href="assets/beniittaHuttunenCv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cvButton"
+              >
+                View Cv
+              </a>
+              <a
+                href="assets/beniittaHuttunenCv.pdf"
+                download="beniittaHuttunenCV.pdf"
+                class="cvButton"
+                class="cvButton reveal fadeIn"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </section>
 
         <div class="hidden overlay">
           <div class="modalContent">
-            <h2>Beniitta Huttunen</h2>
+            <h2>Why I Code</h2>
             <p>
               What draws me to web development is how it’s always changing.
               There’s always something new to learn and problems to figure out.
@@ -222,8 +229,9 @@
               ></iframe>
               <h3 class="reveal fadeIn">Hr App</h3>
               <p class="reveal fadeIn">
-                An HR app to manage employee profiles with personalized
-                reminders, department images, responsive design and more.
+                An Hr app made with React that let's you manage employee
+                profiles with personalized reminders, department images,
+                responsive design and more.
               </p>
               <div class="projectLinks reveal fadeIn">
                 <a
@@ -294,8 +302,9 @@
               ></iframe>
               <h3 class="reveal fadeIn">Pancake App</h3>
               <p class="reveal fadeIn">
-                A two view pancake order app for customizing and managing
-                orders, with all data saved in localStorage.
+                A two view pancake order app made with Javascript for
+                customizing and managing orders, with data saved in
+                localStorage.
               </p>
               <div class="projectLinks reveal fadeIn">
                 <a
@@ -333,7 +342,7 @@
                   />
                 </picture>
               </a>
-              <h3 class="reveal fadeIn">Flashcard and Namecolor App</h3>
+              <h3 class="reveal fadeIn">Flashcard App</h3>
               <p class="reveal fadeIn">
                 React and Laravel app to flip Finnish/English flashcards, manage
                 names, favorite colors and save favorite flashcards to database.
