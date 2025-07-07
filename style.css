@@ -34,8 +34,9 @@ body {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Manrope", "Space Grotesk", "Roboto", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
   color: #240046;
   line-height: 1.6;
   opacity: 1;
@@ -86,7 +87,7 @@ header {
 button,
 a {
   cursor: url("images/cursor/pinkCursor.cur"), auto;
-  font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
+  font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
 }
 
@@ -96,9 +97,7 @@ a {
   border-radius: 2rem;
   color: white;
   padding: 0.6rem 1.2rem;
-  font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
-  font-weight: 800;
+
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
 }
@@ -273,6 +272,8 @@ nav a {
   transform: translateY(30px);
   animation: fadeSlideUp 1s ease-out forwards;
   animation-delay: 0.3s;
+  font-family: "Roboto Mono", "Roboto", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.8rem;
 }
 
@@ -319,23 +320,27 @@ nav a {
   padding: 1rem;
   border-radius: 2rem;
   color: #e0e0e0;
-  max-width: 500px;
-  font-size: 1rem;
-  line-height: 1.7;
+  max-width: 440px;
+  font-size: 1.2rem;
+  line-height: 1.5;
   text-align: center;
 }
 
 .aboutSectionText h2 {
   font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: 700;
   color: #8338ec;
 }
 
+.nameHighlight {
+  color: #d889ff;
+}
+
 #seeMoreButton,
-#cvButton {
+.cvButton {
   display: inline-block; /*make buttons hover*/
   background-color: transparent;
   font-size: 1rem;
@@ -360,8 +365,8 @@ nav a {
   box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
 }
 
-#cvButton:hover,
-#cvButton:active {
+.cvButton:hover,
+.cvButton:active {
   background-color: #bd55cd;
   color: #fff;
   outline: none;
@@ -395,6 +400,7 @@ nav a {
   display: flex;
   flex-direction: column;
   text-align: center;
+
   background-color: #1f1f1f;
   width: 370px;
   border-radius: 1rem;
@@ -421,6 +427,8 @@ nav a {
   font-size: 1rem;
   color: #ccc;
   line-height: 1.5;
+  margin-top: auto;
+
   margin-bottom: 1rem;
 }
 
@@ -497,18 +505,18 @@ nav a {
 }
 
 .modalContent p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
 #modalCloseButton,
 #mobileMenuCloseButton {
   position: absolute;
-  top: 1rem;
+  top: 0.1rem;
   right: 1rem;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: #f0f0f0;
 
   transition: color 0.3s ease, transform 0.2s ease;
@@ -559,6 +567,7 @@ nav a {
   gap: 1.5rem;
   font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
+
   list-style: none;
   flex-wrap: wrap;
 }
@@ -568,9 +577,9 @@ nav a {
   background-color: #e572e9;
   background-color: #c84dee;
   padding: 0.8rem 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
   color: white;
-
+  font-family: "Roboto Mono";
   border-radius: 2rem;
   background-color: 0.3s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -777,14 +786,14 @@ footer ul {
 
 footer ul li a {
   display: inline-block;
-  transition: color 0.3s ease, font-size 0.3s ease;
+  transition: color 0.3s ease, font-size 0.3s ease, transform 0.9s;
 }
 
 footer ul li a:hover,
 footer ul li a:focus {
   font-size: 1.2rem;
   color: #1e90ff;
-  transform: scale(1.2);
+  transform: translateY(-4px) scale(1.2);
 }
 
 .reveal {
