@@ -16,8 +16,8 @@ body {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Manrope", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Manrope", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #240046;
   line-height: 1.6;
   opacity: 1;
@@ -639,12 +639,11 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
+  max-width: 450px;
   background-color: #1f1f1f;
   background-color: #3f2e56e1;
-
-  padding: 4rem 2rem;
-  border-radius: 1rem;
+  padding: 3rem 1rem;
+  border-radius: 2rem;
   margin: 0 auto;
 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -659,7 +658,7 @@ nav a {
   font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
   font-size: 2.5rem;
-  color: #8338ec;
+  color: #ede7f5;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -672,7 +671,7 @@ nav a {
   flex-direction: column;
   max-width: 700px;
   margin: 0 auto;
-  gap: 1.5rem;
+  gap: 0.9rem;
   transition: transform 0.3s ease;
 }
 
@@ -720,10 +719,10 @@ nav a {
   display: block;
   background-color: #8338ec;
   border: none;
-  padding: 0.9rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   margin: 2rem auto 0 auto;
-  font-size: 1.1rem;
-  margin-top: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
   border-radius: 2rem;
   color: #fff;
   font-weight: 700;
@@ -1200,8 +1199,6 @@ body.darkMode footer {
   header {
     padding: 0.8rem 1rem;
   }
-
-
 
   #toggleModeButton {
     padding: 0.5rem 1rem;
