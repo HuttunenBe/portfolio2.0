@@ -16,11 +16,11 @@ body {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Manrope", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #240046;
   line-height: 1.6;
   opacity: 1;
+  font-family: "Manrope", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   transition: background-color 0.9s ease, color 0.3s ease;
 }
 
@@ -78,7 +78,6 @@ a {
   border-radius: 2rem;
   color: white;
   padding: 0.6rem 1.2rem;
-
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
 }
@@ -111,11 +110,9 @@ a {
   list-style: none;
   gap: 1.5rem;
   font-size: 0.9rem;
-
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #f0e6ff;
-
   text-decoration: none;
 }
 
@@ -155,7 +152,6 @@ a {
 
 #mobileMenu.active {
   display: block;
-
   transform: translateX(0);
 }
 
@@ -237,7 +233,6 @@ nav a {
 .headerAnimation span {
   display: inline-block;
   letter-spacing: -5px;
-
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.4s forwards;
@@ -252,7 +247,6 @@ nav a {
 
 .lastLetter,
 .accentLetters {
-  color: rgb(180, 63, 182);
   color: #e209ed;
   transition: color 0.3s ease;
 }
@@ -284,7 +278,6 @@ nav a {
 .aboutSectionContainer {
   display: flex;
   align-items: center;
-
   max-width: 1100px;
   background-color: #3f2e56e1;
   /* background-image: url("images/backgroundBody.webp");*/
@@ -303,7 +296,6 @@ nav a {
   height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  object-fit: cover;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   border: 5px solid #8338ec;
   transition: transform 9s ease;
@@ -354,7 +346,6 @@ nav a {
 #seeMoreButton,
 .cvButton {
   display: inline-block; /*make buttons hover*/
-
   background-color: transparent;
   font-size: 1rem;
   color: #ffffff;
@@ -377,7 +368,6 @@ nav a {
 #seeMoreButton:focus {
   background-color: #8338ec;
   color: #fff;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
   transform: scale(1.09);
   box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
 }
@@ -389,6 +379,79 @@ nav a {
   outline: none;
   transform: scale(1.09);
   box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(18, 18, 18, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1c7fd;
+  padding: 2.5rem;
+  max-width: 700px;
+  width: 95%;
+  border-radius: 1rem;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(131, 56, 236, 0.8);
+}
+
+.modalContent h2 {
+  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+
+  color: #8338ec;
+}
+
+.modalContent p {
+  line-height: 1.6;
+  text-align: left;
+  max-width: 70vw;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 0rem;
+  font-size: 1.05rem;
+}
+
+#modalCloseButton,
+#mobileMenuCloseButton {
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: #f0f0f0;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#modalCloseButton:hover,
+#modalCloseButton:active,
+#mobileMenuCloseButton:hover,
+#mobileMenuCloseButton:active {
+  color: #ff4d6d;
+  transform: rotate(90deg);
 }
 
 .projectSectionContainer {
@@ -482,82 +545,8 @@ nav a {
   display: block;
 }
 
-.overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(18, 18, 18, 0.9);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  z-index: 1000;
-}
-
-.overlay.hidden {
-  display: none;
-}
-
-.modalContent {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f1c7fd;
-  padding: 2.5rem;
-  max-width: 700px;
-  width: 95%;
-  border-radius: 1rem;
-  color: #000000;
-  box-shadow: 0 0 20px rgba(131, 56, 236, 0.8);
-}
-
-.modalContent h2 {
-  font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-size: 2.2rem;
-
-  color: #8338ec;
-}
-
-.modalContent p {
-  line-height: 1.6;
-  text-align: left;
-  max-width: 70vw;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  padding: 0rem;
-  font-size: 1.05rem;
-}
-
-#modalCloseButton,
-#mobileMenuCloseButton {
-  position: absolute;
-  top: 0.3rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.7rem;
-  color: #f0f0f0;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-#modalCloseButton:hover,
-#modalCloseButton:active,
-#mobileMenuCloseButton:hover,
-#mobileMenuCloseButton:active {
-  color: #ff4d6d;
-  transform: rotate(90deg);
-}
-
 .skillsSectionContainer {
   max-width: 1000px;
-
   margin: 3rem auto;
   background-color: #f7f3fbc7;
   background-color: #2d56fbb4;
@@ -567,7 +556,6 @@ nav a {
   text-align: center;
   border-radius: 1.5rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-
   transition: background-color 0.9s ease, color 0.6s ease;
   flex-wrap: wrap;
 }
@@ -589,12 +577,10 @@ nav a {
 .skillsList {
   display: flex;
   justify-content: center;
-
   text-transform: uppercase;
   gap: 1.5rem;
   font-family: "JetBrains Mono", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
-
   list-style: none;
   flex-wrap: wrap;
 }
@@ -609,7 +595,7 @@ nav a {
   font-family: "Roboto Mono", "roboto", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 2rem;
-  background-color: 0.3s ease;
+  background-color: background-color 0.3s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -640,18 +626,17 @@ nav a {
   align-items: center;
   justify-content: center;
   max-width: 450px;
-  background-color: #1f1f1f;
   background-color: #3f2e56e1;
   padding: 3rem 1rem;
   border-radius: 2rem;
   margin: 0 auto;
-
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   transition: background-color 50s ease;
 }
 
 .contactSectionContainer:hover {
   background-color: #fb81ffaa;
+  outline: 2px solid #aaa;
 }
 
 .contactFormGroup h2 {
@@ -662,7 +647,6 @@ nav a {
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
-
   animation: fadeIn 5s forwards;
 }
 
@@ -674,12 +658,6 @@ nav a {
   gap: 0.9rem;
   transition: transform 0.3s ease;
 }
-
-/*.contactFormGroup label {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #ddd;
-}*/
 
 .contactFormGroup label {
   position: absolute;
@@ -726,7 +704,6 @@ nav a {
   border-radius: 2rem;
   color: #fff;
   font-weight: 700;
-
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -779,7 +756,6 @@ nav a {
   background-color: #8338ec;
   bottom: 2rem;
   right: 2rem;
-
   border: none;
   padding: 0.8rem 1.4rem;
   border-radius: 3rem;
@@ -890,9 +866,45 @@ body.darkMode header {
   color: #ffffff;
 }
 
+body.darkMode nav a:hover,
+body.darkMode nav a:focus {
+  color: #b38feb;
+}
+
+body.darkMode .heroSectionContent h1,
+body.darkMode .heroSectionContent h2 {
+  color: #f0f0f0;
+}
+
+body.darkMode .aboutSectionText h2,
+body.darkMode .projectSectionContainer h2,
+body.darkMode .project h3,
+body.darkMode .modalContent h2,
+body.darkMode .skillsSectionContainer h2,
+body.darkMode .contactFormGroup h2 {
+  color: #b38feb;
+}
+
 body.darkMode .aboutSectionContainer {
   background-color: #0c0614b3;
   color: #f0f0f0;
+}
+
+body.darkMode .modalContent {
+  background-color: #1a1a1a;
+  color: #fbb9ff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+body.darkMode #seeMoreButton {
+  color: #b38feb;
+  border-color: #b38feb;
+}
+
+body.darkMode #seeMoreButton:hover,
+body.darkMode #seeMoreButton:focus {
+  background-color: #b38feb;
+  color: #121212;
 }
 
 body.darkMode .project {
@@ -906,6 +918,14 @@ body.darkMode .project:active {
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
 }
 
+body.darkMode .project a {
+  color: #b38feb;
+}
+
+body.darkMode .project a:hover {
+  color: #e0baff;
+}
+
 body.darkMode .skillsSectionContainer {
   background-color: #1a1a1af0;
   color: #f0f0f0;
@@ -916,15 +936,18 @@ body.darkMode .skillsSectionIntro {
   color: #e0e0e0;
 }
 
+body.darkMode .skillsList li {
+  background-color: #9c45ca;
+}
+
+body.darkMode .skillsList li:hover {
+  background-color: #b38feb;
+  box-shadow: 0 6px 15px rgba(156, 69, 202, 0.4);
+}
+
 body.darkMode .contactSectionContainer {
   background-color: #0c06148b;
   color: #fbb9ff;
-}
-
-body.darkMode .modalContent {
-  background-color: #1a1a1a;
-  color: #fbb9ff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 body.darkMode #backToTopButton {
@@ -951,53 +974,6 @@ body.darkMode #toggleModeButton:hover {
   box-shadow: 0 8px 20px rgba(156, 69, 202, 0.5);
 }
 
-body.darkMode .heroSectionContent h1,
-body.darkMode .heroSectionContent h2 {
-  color: #f0f0f0;
-}
-
-body.darkMode .aboutSectionText h2,
-body.darkMode .projectSectionContainer h2,
-body.darkMode .project h3,
-body.darkMode .modalContent h2,
-body.darkMode .skillsSectionContainer h2,
-body.darkMode .contactFormGroup h2 {
-  color: #b38feb;
-}
-
-body.darkMode nav a:hover,
-body.darkMode nav a:focus {
-  color: #b38feb;
-}
-
-body.darkMode #seeMoreButton {
-  color: #b38feb;
-  border-color: #b38feb;
-}
-
-body.darkMode #seeMoreButton:hover,
-body.darkMode #seeMoreButton:focus {
-  background-color: #b38feb;
-  color: #121212;
-}
-
-body.darkMode .project a {
-  color: #b38feb;
-}
-
-body.darkMode .project a:hover {
-  color: #e0baff;
-}
-
-body.darkMode .skillsList li {
-  background-color: #9c45ca;
-}
-
-body.darkMode .skillsList li:hover {
-  background-color: #b38feb;
-  box-shadow: 0 6px 15px rgba(156, 69, 202, 0.4);
-}
-
 body.darkMode .contactFormGroup input,
 body.darkMode .contactFormGroup textarea {
   border-color: #f18bf8;
@@ -1017,12 +993,11 @@ body.darkMode footer {
 }
 
 @media (max-width: 980px) {
-  #desktopMenu {
-    display: none;
-  }
-
   #mobileMenuToggle {
     display: block;
+  }
+  #desktopMenu {
+    display: none;
   }
 }
 
@@ -1040,15 +1015,6 @@ body.darkMode footer {
 }
 
 @media (max-width: 860px) {
-  /*body::before {
-    content: none;
-    display: none;
-  }*/
-
-  /*body::before {
-    filter: none;
-    opacity: 1;}*/
-
   .modalContent {
     max-width: 90vw;
     margin-top: 2rem;
@@ -1075,24 +1041,6 @@ body.darkMode footer {
   body::before {
     background-image: url("images/backgrounds/background1Medium.webp"),
       url("images/backgrounds/background2Medium.webp");
-  }
-
-  .socialMediaIconHero {
-    z-index: 10;
-  }
-
-  .heroSectionContainer {
-    min-height: 350px;
-  }
-
-  .heroSectionContent h1 {
-    font-size: 3rem;
-    letter-spacing: 3px;
-  }
-
-  .heroSectionContent h2 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
   }
 
   .aboutSectionContainer {
@@ -1175,6 +1123,25 @@ body.darkMode footer {
     width: auto;
     max-width: 250px;
   }
+
+  .socialMediaIconHero {
+    z-index: 10;
+  }
+
+  .heroSectionContainer {
+    min-height: 350px;
+  }
+
+  .heroSectionContent h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+
+  .heroSectionContent h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
   .socialMediaIconContact {
     width: 30px;
     height: 30px;
@@ -1237,6 +1204,23 @@ body.darkMode footer {
     font-size: 0.95rem;
   }
 
+  .modalContent {
+    padding: 2rem 1.5rem;
+  }
+
+  .modalContent h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .modalContent p {
+    font-size: 0.9rem;
+  }
+
+  #modalCloseButton {
+    font-size: 1.5rem;
+  }
+
   #seeMoreButton {
     padding: 0.7rem 1.5rem;
     font-size: 0.95rem;
@@ -1267,23 +1251,6 @@ body.darkMode footer {
     font-size: 0.9rem;
     z-index: 1000;
     position: fixed;
-  }
-
-  .modalContent {
-    padding: 2rem 1.5rem;
-  }
-
-  .modalContent h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .modalContent p {
-    font-size: 0.9rem;
-  }
-
-  #modalCloseButton {
-    font-size: 1.5rem;
   }
 
   .skillsSectionContainer {
