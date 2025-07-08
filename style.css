@@ -1,3 +1,39 @@
+/*143F91
+7257C7
+3E3666
+DCA8EE
+F9B7FD
+A86ECB
+
+
+143F91
+3E3666
+7257C7
+A86ECB
+F9B7FD
+
+Blues:
+#2E5BFF
+#4A7CFF
+#3D8BFF
+#3a72ff //toggle mode button 
+
+Pinks:
+#FF5CBA
+#FF5CBA//accent colors
+#FF77D1
+#FF3EB9
+
+Purples:
+#A14EFF
+#B46EFF
+
+#30D5C8
+#40E0D0
+#48D1CC*/
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -73,7 +109,7 @@ a {
 }
 
 #toggleModeButton {
-  background-color: #8338ec;
+  background-color: #3a72ff;
   border: none;
   border-radius: 2rem;
   color: white;
@@ -84,10 +120,10 @@ a {
 
 #toggleModeButton:hover,
 #toggleModeButton:active {
-  background-color: #6a00b8;
+  background-color:  #ff5cf1;
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mobileMenuToggle {
@@ -101,7 +137,7 @@ a {
 }
 
 #mobileMenuToggle:hover {
-  color: rgb(89, 141, 219);
+  color: #FF5CBA;
   transform: translateY(-2px) scale(1.2);
 }
 
@@ -128,11 +164,11 @@ a {
 }
 
 #desktopMenu ul li:nth-child(odd) a:hover {
-  color: #1e90ff;
+  color: #38dbfc;
 }
 
 #desktopMenu ul li:nth-child(even) a:hover {
-  color: #ff1efb;
+   color: #e912ed;
 }
 
 #mobileMenu {
@@ -247,13 +283,13 @@ nav a {
 
 .lastLetter,
 .accentLetters {
-  color: #e209ed;
+  color: #FF5CBA;
   transition: color 0.3s ease;
 }
 
 .lastLetter:hover,
 .accentLetters:hover {
-  color: rgb(255, 100, 255);
+  color: #38dbfc;
 }
 
 .heroSectionContent h2 {
@@ -312,11 +348,11 @@ nav a {
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  color: #8338ec;
+  color: #ec5cff;
 }
 
 .nameHighlight {
-  color: #d889ff;
+  color: #f189ff;
 }
 
 .aboutSectionText {
@@ -335,6 +371,7 @@ nav a {
   margin-bottom: 1rem;
   padding: 0rem;
   font-size: 1.05rem;
+  color: #fbdbff;
 }
 
 .aboutSectionButtons {
@@ -361,7 +398,8 @@ nav a {
 }
 
 #seeMoreButton {
-  background-color: rgb(152, 12, 251);
+  background-color: #A14EFF;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 #seeMoreButton:hover,
@@ -369,16 +407,17 @@ nav a {
   background-color: #8338ec;
   color: #fff;
   transform: scale(1.09);
-  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+
 }
 
 .cvButton:hover,
 .cvButton:active {
-  background-color: #bd55cd;
+  background-color: #8338ec;
   color: #fff;
   outline: none;
   transform: scale(1.09);
-  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+  
 }
 
 .overlay {
@@ -450,7 +489,7 @@ nav a {
 #modalCloseButton:active,
 #mobileMenuCloseButton:hover,
 #mobileMenuCloseButton:active {
-  color: #ff4d6d;
+  color: #FF5CBA;
   transform: rotate(90deg);
 }
 
@@ -464,7 +503,7 @@ nav a {
     sans-serif;
   margin-bottom: 2.5rem;
   font-size: 2.8rem;
-  color: #8338ec;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -480,7 +519,9 @@ nav a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #1f1f1f;
+  
+  background-color: #3E3666;
+    background-color: #0e2b3de5;
   width: 370px;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -499,12 +540,14 @@ nav a {
   margin-bottom: 0.8rem;
   text-transform: uppercase;
   color: #8338ec;
+    color: #FF77D1;
+    color: #bb8dfb;
   font-size: 1.5rem;
 }
 
 .project p {
   font-size: 1rem;
-  color: #ccc;
+  color: #ffffff;
   line-height: 1.5;
   margin-top: auto;
 
@@ -516,6 +559,9 @@ nav a {
   font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
   color: #8338ec;
+    color: #40E0D0;
+      color: #93cbff;
+       color: #93fbf1;
   font-weight: 600;
   margin-top: 0.5rem;
   margin: 0.24rem;
@@ -549,8 +595,23 @@ nav a {
   max-width: 1000px;
   margin: 3rem auto;
   background-color: #f7f3fbc7;
-  background-color: #2d56fbb4;
-  background-color: #aa88fff7;
+  background-color: #7257C7;
+    background: #3E3666;
+      background-color: #3f2e56e1;
+    
+  /*background-color: #aa88fff7;
+    background-color: #A86ECB;*/
+
+
+    /*DCA8EE
+F9B7FD
+A86ECB
+
+143F91
+3E3666
+7257C7
+A86ECB
+F9B7FD*/
   color: #240046;
   padding: 4rem 2rem;
   text-align: center;
@@ -626,7 +687,7 @@ nav a {
   align-items: center;
   justify-content: center;
   max-width: 450px;
-  background-color: #3f2e56e1;
+  background-color: #072a4d9f;
   padding: 3rem 1rem;
   border-radius: 2rem;
   margin: 0 auto;
@@ -635,8 +696,8 @@ nav a {
 }
 
 .contactSectionContainer:hover {
-  background-color: #fb81ffaa;
-  outline: 2px solid #aaa;
+  background-color: #101a2492;
+ 
 }
 
 .contactFormGroup h2 {
@@ -688,14 +749,14 @@ nav a {
 .contactFormGroup input:focus,
 .contactFormGroup textarea:focus {
   outline: none;
-  border-color: #8338ec;
+  border-color: #30b7d5;
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .contactSubmitButton {
   display: block;
-  background-color: #8338ec;
+  background-color:  #388dfc;;
   border: none;
   padding: 0.8rem 1.6rem;
   margin: 2rem auto 0 auto;
@@ -707,15 +768,15 @@ nav a {
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+ 
 }
 
 .contactSubmitButton:hover,
 .contactSubmitButton:focus {
-  background-color: #6a00b8;
+  background-color: #ff1efb;;
   transform: scale(1.03) translateY(-2px);
   color: #fff;
-  box-shadow: 0 8px 20px rgba(131, 56, 236, 0.5);
+
 }
 
 .socialMediaLinks {
@@ -806,7 +867,7 @@ footer ul li a:focus {
 }
 
 footer ul li:nth-child(odd) a:hover {
-  color: #1e90ff;
+  color: #38dbfc;
 }
 
 footer ul li:nth-child(even) a:hover {
@@ -882,11 +943,11 @@ body.darkMode .project h3,
 body.darkMode .modalContent h2,
 body.darkMode .skillsSectionContainer h2,
 body.darkMode .contactFormGroup h2 {
-  color: #b38feb;
+  color: #e0cdff;
 }
 
 body.darkMode .aboutSectionContainer {
-  background-color: #0c0614b3;
+  background-color: #0723288d;
   color: #f0f0f0;
 }
 
@@ -897,20 +958,14 @@ body.darkMode .modalContent {
 }
 
 body.darkMode #seeMoreButton {
-  color: #b38feb;
+  color: #ffffff;
   border-color: #b38feb;
 }
 
-body.darkMode #seeMoreButton:hover,
-body.darkMode #seeMoreButton:focus {
-  background-color: #b38feb;
-  color: #121212;
-}
 
 body.darkMode .project {
-  background-color: #1a1a1af0;
+  background-color: #202020c3;
   color: #f0f0f0;
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
 }
 
 body.darkMode .project:hover,
@@ -919,7 +974,7 @@ body.darkMode .project:active {
 }
 
 body.darkMode .project a {
-  color: #b38feb;
+  color: #dd8feb;
 }
 
 body.darkMode .project a:hover {
@@ -927,7 +982,7 @@ body.darkMode .project a:hover {
 }
 
 body.darkMode .skillsSectionContainer {
-  background-color: #1a1a1af0;
+  background-color: #1818188d;
   color: #f0f0f0;
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
@@ -937,7 +992,7 @@ body.darkMode .skillsSectionIntro {
 }
 
 body.darkMode .skillsList li {
-  background-color: #9c45ca;
+  background-color: #5045ca;
 }
 
 body.darkMode .skillsList li:hover {
@@ -946,7 +1001,7 @@ body.darkMode .skillsList li:hover {
 }
 
 body.darkMode .contactSectionContainer {
-  background-color: #0c06148b;
+  background-color: #060b148e;
   color: #fbb9ff;
 }
 
@@ -963,15 +1018,15 @@ body.darkMode #backToTopButton:hover {
 
 body.darkMode .contactSubmitButton,
 body.darkMode #toggleModeButton {
-  background-color: #9c45ca;
-  color: #f0f0f0;
-  box-shadow: 0 6px 15px rgba(156, 69, 202, 0.4);
+  background-color: #6d308e;
+  color: #ffffff;
+
 }
 
 body.darkMode .contactSubmitButton:hover,
 body.darkMode #toggleModeButton:hover {
-  background-color: #b38feb;
-  box-shadow: 0 8px 20px rgba(156, 69, 202, 0.5);
+  background-color: #5c06e69e;
+ 
 }
 
 body.darkMode .contactFormGroup input,
