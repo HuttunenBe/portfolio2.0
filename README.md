@@ -11,7 +11,7 @@ I did face some challenges, such as animations overlapping each others and ensur
 You can check my portfolio page at Vercel:  
 [Portfolio on Vercel](https://portfolio2-0-beniittas-projects.vercel.app/) 🚀
 
-You can find the old portfolio here:
+You can find the old portfolio here: <br>
 https://portfolio-liart-five-18.vercel.app/
 
 ## ✨ Features
