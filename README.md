@@ -7,7 +7,7 @@ For this project I paid close attention on keeping the code clean and well struc
 I did face some challenges, such as animations overlapping each others and ensuring the mobile responsiveness. Moving forward, I’d like to improve the design in the About section and add more advanced animations.
 
 ## 🌐 Live Demo
-
+ 
 You can check my portfolio page at Vercel:  
 [**Portfolio on Vercel**](https://portfolio2-0-beniittas-projects.vercel.app/) 🚀
 
