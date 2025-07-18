@@ -318,6 +318,7 @@ nav a {
   background-color: #3f2e56e1;
   /* background-image: url("images/backgroundBody.webp");*/
   padding: 3rem 6rem;
+    padding: 3rem;
   margin: 3rem auto;
   gap: 2rem;
   border-radius: 1.5rem;
@@ -352,7 +353,8 @@ nav a {
 }
 
 .nameHighlight {
-  color: #f189ff;
+  color: #f73af4;
+  font-style: bold;
 }
 
 .aboutSectionText {
@@ -362,7 +364,7 @@ nav a {
   color: #e0e0e0;
   max-width: 640px;
   line-height: 1.8;
-  text-align: left;
+  text-align: center;
   font-size: 1.05rem;
   font-weight: 600;
 }
@@ -444,6 +446,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   background-color: #f1c7fd;
+   background-color: #3f2e56e1;
   padding: 2.5rem;
   max-width: 700px;
   width: 95%;
@@ -624,7 +627,7 @@ F9B7FD*/
 .skillsSectionContainer h2 {
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
-  color: #1f1ff1;
+  color: #cdcdf6;
   font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
 }
@@ -796,6 +799,7 @@ F9B7FD*/
 
 .socialMediaIconContact {
   margin-top: 0.3rem;
+  margin-bottom: 1rem;
   width: 35px;
   height: 35px;
   cursor: url("images/cursor/cursorIcons.cur"), auto;
@@ -1060,11 +1064,10 @@ body.darkMode footer {
   .aboutSectionContainer {
     flex-direction: column;
 
-    max-width: 80vw;
+    max-width: 95vw;
   }
 
   .aboutSectionText p {
-    max-width: 600px;
     text-align: center;
   }
 }
