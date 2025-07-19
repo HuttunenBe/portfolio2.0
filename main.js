@@ -44,8 +44,14 @@ const scrollFunction = () => {
   }
 };
 const displayElement = () => {
-  overlay.classList.toggle("hidden");
+  const isHidden = overlay.classList.toggle("hidden");
+  if (!isHidden) {
+    document.body.classList.add("modalOpen"); 
+  } else {
+    document.body.classList.remove("modalOpen"); 
+  }
 };
+
 const backToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
