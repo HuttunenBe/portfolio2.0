@@ -46,9 +46,9 @@ const scrollFunction = () => {
 const displayElement = () => {
   const isHidden = overlay.classList.toggle("hidden");
   if (!isHidden) {
-    document.body.classList.add("modalOpen"); 
+    document.body.classList.add("modalOpen");
   } else {
-    document.body.classList.remove("modalOpen"); 
+    document.body.classList.remove("modalOpen");
   }
 };
 

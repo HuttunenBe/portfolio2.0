@@ -10,8 +10,8 @@ html {
 
 body {
   background-color: #f7f3fb;
-  background-image: url("images/backgrounds/background1Large.webp"),
-    url("images/backgrounds/backgroundBackup.webp");
+  background-image: url("images/backgrounds/background1.webp"),
+    url("images/backgrounds/background2.webp");
   background-size: cover;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -27,8 +27,8 @@ body {
 body::before {
   position: fixed;
   content: "";
-  background-image: url("images/backgrounds/background1Large.webp"),
-    url("images/backgrounds/backgroundBackup.webp");
+  background-image: url("images/backgrounds/background1.webp"),
+    url("images/backgrounds/background2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: blur(1px);
+  filter: blur(0px);
   opacity: 0;
   z-index: -1;
   animation: fadeIn 3s forwards;
@@ -195,8 +195,8 @@ nav a {
   justify-content: center;
   text-align: center;
   max-width: 1100px;
-  background-image: url("images/backgrounds/background1Large.webp"),
-    url("images/backgrounds/backgroundBackup.webp");
+  background-image: url("images/backgrounds/background1.webp"),
+    url("images/backgrounds/heroImageBackup.webp");
   background-size: cover;
   background-position: top left;
   position: relative;
@@ -280,6 +280,7 @@ nav a {
 .aboutSectionContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 1100px;
   background-color: #3f2e56e1;
   /* background-image: url("images/backgroundBody.webp");*/
@@ -322,7 +323,8 @@ nav a {
   font-family: "orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
 }
 
 .nameHighlight:hover {
@@ -339,6 +341,11 @@ nav a {
   text-align: left;
   font-size: 1.05rem;
   font-weight: 600;
+}
+
+.aboutMeSectionFirstParagraph {
+  display: block;
+  font-size: 1.3rem;
 }
 
 .aboutSectionText p {
@@ -577,7 +584,6 @@ body.modalOpen {
 .projectImage {
   object-fit: cover;
   width: 100%;
-  height: 190px;
   border-radius: 0.8rem;
   margin-bottom: 1rem;
   max-width: 700px;
@@ -653,12 +659,14 @@ F9B7FD*/
   border-radius: 2rem;
   background-color: background-color 0.3s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 1px #bd1c6d, 6px 6px 0px #1719ba;
 }
 
 .skillsList li:hover,
 .skillsList li:active {
   background-color: #ff4d6d;
   box-shadow: 0 6px 15px rgba(255, 77, 109, 0.4);
+  box-shadow: 3px 3px 1px #bd1c6d, 6px 6px 0px #1719ba;
 }
 
 .skillsSectionIntro {
@@ -916,14 +924,12 @@ footer ul li:nth-child(even) a:hover {
 body.darkMode {
   background-color: #121212;
   color: #f0f0f0;
-  
-  
 }
 
 body.darkMode::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(32, 10, 51, 0.905)),
-    url("images/backgrounds/background1Large.webp"),
-    url("images/backgrounds/background2Large.webp");
+    url("images/backgrounds/background1.webp"),
+    url("images/backgrounds/background3.webp");
 }
 
 body.darkMode header {
@@ -943,7 +949,6 @@ body.darkMode .heroSectionContent h2 {
 
 body.darkMode .aboutSectionText h2,
 body.darkMode .projectSectionContainer h2,
-body.darkMode .project h3,
 body.darkMode .skillsSectionContainer h2,
 body.darkMode .contactFormGroup h2 {
   color: #f5f1fd;
@@ -956,6 +961,16 @@ body.darkMode #toggleModeButton {
 
 body.darkMode #toggleModeButton:hover {
   background-color: #5c06e69e;
+}
+
+body.darkMode .lastLetter,
+body.darkMode .accentLetters {
+  color: #cd0a7c;
+}
+
+body.darkMode .lastLetter:hover,
+body.darkMode .accentLetters:hover {
+  color: #0ea3de;
 }
 
 body.darkMode .overlay {
@@ -971,8 +986,13 @@ body.darkMode .modalContent::-webkit-scrollbar-thumb {
 }
 
 body.darkMode .aboutSectionContainer {
-  background-color: #0723288d;
+  /*background-color: #0723288d;*/
+  background-color: #031417b1;
   color: #f0f0f0;
+}
+
+body.darkMode .nameHighlight {
+  color: #cd0a7c;
 }
 
 body.darkMode .modalContent {
@@ -982,27 +1002,33 @@ body.darkMode .modalContent {
 }
 
 body.darkMode .project {
-  background-color: #202020c3;
+  /*background-color: #202020c3;
+    background-color: #141414d6;*/
+  background-color: #060b148b;
   color: #f0f0f0;
 }
 
 body.darkMode .project:hover,
 body.darkMode .project:active {
-  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.darkMode .project h3 {
+  color: rgb(224, 122, 255);
 }
 
 body.darkMode .project a {
-  color: #dd8feb;
+  color: #4ef2fd;
 }
 
 body.darkMode .project a:hover {
-  color: #e0baff;
+  color: #df24ed;
 }
 
 body.darkMode .skillsSectionContainer {
-  background-color: #1818188d;
+  /*background-color: #050117a0;*/
+  background-color: #031417b1;
   color: #f0f0f0;
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
 
 body.darkMode .skillsSectionIntro {
@@ -1010,12 +1036,12 @@ body.darkMode .skillsSectionIntro {
 }
 
 body.darkMode .skillsList li {
-  background-color: #5045ca;
+  background-color: #540483;
+  box-shadow: 4px 4px 1px #0b0344, 6px 6px 0px #f523f9;
 }
 
 body.darkMode .skillsList li:hover {
-  background-color: #b38feb;
-  box-shadow: 0 6px 15px rgba(156, 69, 202, 0.4);
+  background-color: #30024a;
 }
 
 body.darkMode .contactSectionContainer {
@@ -1073,6 +1099,16 @@ body.darkMode footer {
 }
 
 @media (max-width: 980px) {
+  body {
+    background-image: url("images/backgrounds/background1Medium.webp"),
+      url("images/backgrounds/background2Medium.webp");
+  }
+
+  body::before {
+    background-image: url("images/backgrounds/background1Medium.webp"),
+      url("images/backgrounds/background2Medium.webp");
+  }
+
   #mobileMenuToggle {
     display: block;
   }
@@ -1083,13 +1119,23 @@ body.darkMode footer {
 
 @media (max-width: 900px) {
   .aboutSectionContainer {
+    display: flex;
     flex-direction: column;
-
-    max-width: 95vw;
+    align-items: center;
+    justify-content: center;
+    max-width: 85vw;
+    margin: 0 auto;
   }
 
   .aboutSectionText p {
+    max-width: 60vw;
     text-align: center;
+    margin: 0 auto;
+  }
+
+  .projectSectionContainer {
+    gap: 0;
+    margin: 0;
   }
 }
 
@@ -1111,19 +1157,16 @@ body.darkMode footer {
   }
 }
 
+@media (max-width: 820px) {
+  .project {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.7s ease;
+    width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
-  body {
-    background-image: url("images/backgrounds/background1Medium.webp"),
-      url("images/backgrounds/background2Medium.webp");
-  }
-
-  body::before {
-    background-image: url("images/backgrounds/background1Medium.webp"),
-      url("images/backgrounds/background2Medium.webp");
-  }
-
   .aboutSectionContainer {
-    flex-direction: column;
     padding: 2rem 1.5rem;
   } /*check*/
 
@@ -1144,6 +1187,7 @@ body.darkMode footer {
 
   .project {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
     transition: box-shadow 0.3s ease, transform 0.7s ease;
   }
 
@@ -1228,12 +1272,6 @@ body.darkMode footer {
   }
 }
 @media (max-width: 680px) {
-  .heroSectionContent h1 {
-    font-size: 2.7rem;
-  }
-}
-
-@media (max-width: 480px) {
   body {
     background-image: url("images/backgrounds/background1Small.webp"),
       url("/images/backgrounds/background2Small.webp");
@@ -1243,6 +1281,20 @@ body.darkMode footer {
     background-image: url("images/backgrounds/background1Small.webp"),
       url("/images/backgrounds/background2Small.webp");
   }
+
+  .heroSectionContent h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .project {
+    padding: 1rem;
+    width: 56vh;
+  }
+}
+
+@media (max-width: 480px) {
   header {
     padding: 0.8rem 1rem;
   }
@@ -1316,7 +1368,6 @@ body.darkMode footer {
   }
 
   .project {
-    width: 100%;
     padding: 1rem;
   }
 
@@ -1386,6 +1437,4 @@ body.darkMode footer {
     margin-top: 1rem;
     gap: 1rem;
   }
-
-
 }

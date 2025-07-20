@@ -118,29 +118,24 @@
         </section>
         <section class="aboutSectionContainer reveal fadeIn slideUp" id="about">
           <div class="aboutSectionImage">
-            <picture>
-              <source
-                srcset="images/profiles/profileImage.webp"
-                type="image/webp"
-              />
-              <source
-                srcset="images/profiles/profileBackup.webp"
-                type="image/webp"
-              />
-              <img
-                alt="Profile image for about section"
-                loading="lazy"
-                src="images/profiles/profileBackup2.jpeg"
-                id="profileImage"
-              />
-            </picture>
+            <img
+              src="images/profiles/profileImage.webp"
+              alt="Profile image for about section"
+              loading="lazy"
+              id="profileImage"
+              onerror="this.onerror=null;this.src='images/profiles/profileBackup.jpeg';"
+            />
           </div>
           <div class="aboutSectionText reveal fadeIn slideUp">
             <h2 class="reveal fadeIn slideUp">About me</h2>
             <p class="reveal fadeIn slideUp">
-              Hi, I’m <strong class="nameHighlight">Beniitta Huttunen </strong>,
-              a full-stack web development student from Helsinki.
+              <span class="aboutMeSectionFirstParagraph">
+                Hi, I’m <strong class="nameHighlight">Beniitta Huttunen</strong
+                ><br />
+                A full-stack web development student from Helsinki.
+              </span>
             </p>
+            <br />
             <p>
               My journey into web development began with a realization that
               problem solving has always been my biggest motivator. That led me
@@ -171,7 +166,6 @@
               <a
                 href="beniittaHuttunenCv.pdf"
                 download="beniittaHuttunenCV.pdf"
-                class="cvButton"
                 class="cvButton reveal fadeIn"
               >
                 Download CV
@@ -242,19 +236,13 @@
           <h2 class="reveal fadeIn">Projects</h2>
           <div class="projectSectionContent reveal fadeIn">
             <div class="project">
-              <noscript>
-                <img
-                  src="images/projects/hrAppBackup.webp"
-                  alt="HR App Backup"
-                  class="projectImage reveal fadeIn"
-                />
-              </noscript>
-              <iframe
-                src="https://hr-app-dun.vercel.app/"
-                title="HR App"
+              <img
+                src="images/projects/hrAppProject.webp"
+                alt="HR App"
                 loading="lazy"
                 class="projectImage reveal fadeIn"
-              ></iframe>
+                onerror="this.onerror=null;this.src='images/projects/hrAppProjectBackup.webp';"
+              />
               <h3 class="reveal fadeIn">Hr App</h3>
               <p class="reveal fadeIn">
                 An Hr app made with React that let's you manage employee
@@ -284,18 +272,13 @@
                 rel="noopener noreferrer"
                 class="reveal fadeIn"
               >
-                <picture>
-                  <source
-                    srcset="images/projects/eventsProject.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    alt="Events App"
-                    loading="lazy"
-                    src="images/projects/eventsProjectBackup.png"
-                    class="projectImage reveal fadeIn"
-                  />
-                </picture>
+                <img
+                  src="images/projects/eventsProject.webp"
+                  alt="Events App"
+                  loading="lazy"
+                  class="projectImage reveal fadeIn"
+                  onerror="this.onerror=null;this.src='images/projects/eventsProjectBackup.webp';"
+                />
               </a>
               <h3 class="reveal fadeIn">Events App</h3>
               <p class="reveal fadeIn">
@@ -321,19 +304,14 @@
             </div>
 
             <div class="project">
-              <noscript>
-                <img
-                  src="images/projects/pancakeProjectBackup.webp"
-                  alt="Pancake App Backup"
-                  class="projectImage reveal fadeIn"
-                />
-              </noscript>
-              <iframe
-                src="https://pancake-maker-xi.vercel.app/indexManagement.html"
-                title="Pancake App"
+              <img
+                src="images/projects/pancakeProject.webp"
+                alt="Pancake App"
                 loading="lazy"
                 class="projectImage reveal fadeIn"
-              ></iframe>
+                onerror="this.onerror=null;this.src='images/projects/pancakeProjectBackup.webp';"
+              />
+
               <h3 class="reveal fadeIn">Pancake App</h3>
               <p class="reveal fadeIn">
                 A two view pancake order app made with Javascript for
@@ -363,18 +341,13 @@
                 rel="noopener noreferrer"
                 class="reveal fadeIn"
               >
-                <picture>
-                  <source
-                    srcset="images/projects/flashcardProject.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    alt="Flashcard and Namecolor App"
-                    loading="lazy"
-                    src="images/flashcardsBackup.png"
-                    class="projectImage reveal fadeIn"
-                  />
-                </picture>
+                <img
+                  src="images/projects/flashcard.webp"
+                  alt="Flashcard and Namecolor App"
+                  loading="lazy"
+                  class="projectImage reveal fadeIn"
+                  onerror="this.onerror=null;this.src='images/projects/flashcardBackup.webp';"
+                />
               </a>
               <h3 class="reveal fadeIn">Flashcard App</h3>
               <p class="reveal fadeIn">
