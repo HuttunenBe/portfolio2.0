@@ -779,7 +779,7 @@ F9B7FD*/
   justify-content: center;
   margin-top: 1rem;
   text-align: center;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .socialMediaIconHero {
@@ -791,7 +791,7 @@ F9B7FD*/
 }
 
 .socialMediaIconContact {
-  margin-top: 0.3rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
   width: 35px;
   height: 35px;
@@ -916,6 +916,8 @@ footer ul li:nth-child(even) a:hover {
 body.darkMode {
   background-color: #121212;
   color: #f0f0f0;
+  
+  
 }
 
 body.darkMode::before {
@@ -1220,6 +1222,7 @@ body.darkMode footer {
   }
 
   .socialMediaIconContact {
+    margin-top: 0.2rem;
     width: 30px;
     height: 30px;
   }
@@ -1380,7 +1383,9 @@ body.darkMode footer {
   }
 
   .socialMediaLinks {
-    margin-top: 0;
-    gap: 1.5rem;
+    margin-top: 1rem;
+    gap: 1rem;
   }
+
+
 }
