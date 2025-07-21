@@ -1,37 +1,12 @@
 const overlay = document.querySelector(".overlay");
 const backToTopButton = document.querySelector("#backToTopButton");
-const closeButton = document.querySelector("#modalCloseButton");
 const modalButton = document.querySelector("#seeMoreButton");
+const closeButton = document.querySelector("#modalCloseButton");
 const mobileMenuCloseButton = document.querySelector("#mobileMenuCloseButton");
 const modeButton = document.querySelector("#toggleModeButton");
-const body = document.body;
 const menuToggle = document.querySelector("#mobileMenuToggle");
 const mobileMenu = document.querySelector("#mobileMenu");
 const revealElements = document.querySelectorAll(".reveal");
-window.onscroll = function () {
-  scrollFunction();
-};
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  menuToggle.setAttribute(
-    "aria-expanded",
-    mobileMenu.classList.contains("active")
-  );
-});
-document.addEventListener("click", (event) => {
-  if (
-    !mobileMenu.contains(event.target) &&
-    !menuToggle.contains(event.target)
-  ) {
-    mobileMenu.classList.remove("active");
-    menuToggle.setAttribute("aria-expanded", "false");
-  }
-});
-
-mobileMenuCloseButton.addEventListener("click", () => {
-  mobileMenu.classList.remove("active");
-  menuToggle.setAttribute("aria-expanded", "false");
-});
 
 const scrollFunction = () => {
   if (
@@ -61,12 +36,6 @@ const toggleLightSwitch = () => {
   const currentMode = document.body.classList.contains("darkMode");
   localStorage.setItem("darkMode", JSON.stringify(currentMode));
 };
-const darkModeOn = JSON.parse(localStorage.getItem("darkMode"));
-if (darkModeOn) {
-  document.body.classList.add("darkMode");
-} else {
-  document.body.classList.remove("darkMode");
-}
 
 const revealOnScroll = () => {
   const triggerBottom = window.innerHeight * 0.85;
@@ -79,6 +48,39 @@ const revealOnScroll = () => {
     }
   });
 };
+
+const darkModeOn = JSON.parse(localStorage.getItem("darkMode"));
+if (darkModeOn) {
+  document.body.classList.add("darkMode");
+} else {
+  document.body.classList.remove("darkMode");
+}
+
+window.onscroll = function () {
+  scrollFunction();
+};
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  menuToggle.setAttribute(
+    "aria-expanded",
+    mobileMenu.classList.contains("active")
+  );
+});
+
+document.addEventListener("click", (event) => {
+  if (
+    !mobileMenu.contains(event.target) &&
+    !menuToggle.contains(event.target)
+  ) {
+    mobileMenu.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
+});
+
+mobileMenuCloseButton.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  menuToggle.setAttribute("aria-expanded", "false");
+});
 
 backToTopButton.addEventListener("click", backToTop);
 modalButton.addEventListener("click", displayElement);
