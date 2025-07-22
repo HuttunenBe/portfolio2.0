@@ -214,12 +214,12 @@ nav a {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+  
 }
 
 .heroSectionContent h1 {
   font-size: 3.5rem;
   color: #fff;
-
   line-height: 1;
   margin-bottom: 0.8rem;
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold";
@@ -248,7 +248,7 @@ nav a {
 .lastLetter,
 .accentLetters {
   color: #fb28db;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: color 0.3s ease;
 }
 
@@ -258,7 +258,7 @@ nav a {
 }
 
 .heroSectionContent h2 {
-  font-weight: 400;
+font-weight: 600;
   color: #ffffff;
   opacity: 0;
   transform: translateY(30px);
@@ -266,7 +266,7 @@ nav a {
   animation-delay: 0.3s;
   font-family: "Roboto Mono", "Lucida Sans", "Lucida Sans Regular", Verdana,
     sans-serif;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
 }
 
 @keyframes fadeSlideUp {
@@ -532,7 +532,7 @@ body.modalOpen {
   text-transform: uppercase;
   color: #efa7ff;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .project p {
@@ -548,7 +548,7 @@ body.modalOpen {
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold";
   color: #82f9ed;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
   margin: 0.1rem;
   transition: color 0.3s ease;
@@ -768,7 +768,7 @@ body.modalOpen {
 }
 
 .socialMediaLinks a {
-  transition: filter 0.3s ease, transform 0.3s ease;
+  transition: filter 0.6s ease, transform 0.6s ease;
 }
 
 .socialMediaLinks a:hover,
@@ -896,6 +896,19 @@ body.darkMode header {
   color: #ffffff;
 }
 
+body.darkMode #desktopMenu ul li:nth-child(odd) a:hover {
+  color: #0ea3de;
+}
+
+ body.darkMode #desktopMenu ul li:nth-child(even) a:hover {
+   color: #ee076f;
+}
+
+#mobileMenuToggle:hover {
+   color: #ee076f;
+  
+}
+
 body.darkMode nav a:hover,
 body.darkMode nav a:focus {
   color: #b38feb;
@@ -903,7 +916,7 @@ body.darkMode nav a:focus {
 
 body.darkMode .heroSectionContent h1,
 body.darkMode .heroSectionContent h2 {
-  color: #f0f0f0;
+  color: #ffffff;
 }
 
 body.darkMode .aboutSectionText h2,
@@ -922,9 +935,12 @@ body.darkMode #toggleModeButton:hover {
   background-color: #5c06e69e;
 }
 
+
+
 body.darkMode .lastLetter,
 body.darkMode .accentLetters {
   color: #cd0a7c;
+
 }
 
 body.darkMode .lastLetter:hover,
@@ -932,23 +948,36 @@ body.darkMode .accentLetters:hover {
   color: #0ea3de;
 }
 
+body.darkMode #mobileMenu{
+  background-color: #101010e6;
+  
+}
+
+body.darkMode #mobileMenu a:hover {
+    color: #cd0a7c;
+ 
+}
+
+
+body.darkMode .heroSectionContainer::before{  background-image: linear-gradient(rgba(237, 82, 162, 0.305), rgba(32, 10, 51, 0.135));
+}
+
+
 body.darkMode .overlay {
   background-color: rgba(34, 34, 34, 0.596);
 }
 
 body.darkMode .modalContent h2 {
-  color: #c28dfb;
+  color: #ffffff;
 }
 
 body.darkMode .modalContent {
-  background: none;
   background-color: rgba(28, 28, 28, 0.95);
-  color: white;
 }
 
-body.darkMode .modalContent::-webkit-scrollbar-thumb {
-  background-color: #a55cffa7;
-}
+
+
+
 
 body.darkMode .aboutSectionContainer {
   background-color: #031417b1;
@@ -962,6 +991,7 @@ body.darkMode .nameHighlight {
 body.darkMode .project {
   background-color: #060b148b;
   color: #f0f0f0;
+ 
 }
 
 body.darkMode .project:hover,
@@ -970,16 +1000,19 @@ body.darkMode .project:active {
 }
 
 body.darkMode .project h3 {
-  color: rgb(224, 122, 255);
+  color: rgb(245, 136, 253);
 }
 
 body.darkMode .project a {
   color: #4ef2fd;
+  
 }
 
 body.darkMode .project a:hover {
-  color: #df24ed;
+    color: #cd0a7c;
 }
+
+
 
 body.darkMode .skillsSectionContainer {
   background-color: #031417b1;
@@ -992,11 +1025,13 @@ body.darkMode .skillsSectionIntro {
 
 body.darkMode .skillsList li {
   background-color: #540483;
-  box-shadow: 4px 4px 1px #0b0344, 6px 6px 0px #f523f9;
+  
+  box-shadow:  6px 6px 0px #cd0a7c, 4px 4px 1px #0b0344,;
 }
 
 body.darkMode .skillsList li:hover {
   background-color: #30024a;
+  
 }
 
 body.darkMode .contactSectionContainer {
@@ -1048,6 +1083,14 @@ body.darkMode .contactSubmitButton:focus {
   box-shadow: 0 6px 15px rgba(255, 30, 251, 0.7);
 }
 
+body.darkMode .socialMediaLinks a:hover img,
+.socialMediaLinks a:focus img {
+  filter: invert(25%) sepia(30%) saturate(5000%) hue-rotate(300deg)
+    brightness(100%) contrast(100%);
+}
+
+
+
 body.darkMode footer {
   background-color: #09142b5e;
   color: white;
@@ -1093,6 +1136,10 @@ body.darkMode footer {
     gap: 0;
     margin: 0;
   }
+
+    .projectSectionContainer h2 {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1135,8 +1182,9 @@ body.darkMode footer {
   }
 
   .heroSectionContent h2 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
+   
   }
 
   .socialMediaIconHero {
@@ -1162,8 +1210,9 @@ body.darkMode footer {
   }
 
   .projectSectionContainer h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .project h3 {
