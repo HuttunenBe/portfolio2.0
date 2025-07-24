@@ -1126,6 +1126,11 @@ body.darkMode footer ul li:nth-child(even) a:hover {
   .projectSectionContainer h2 {
     margin-top: 2rem;
   }
+
+  .nameHighlight {
+  font-size: 1.2rem;
+
+}
 }
 
 @media (max-width: 860px) {
@@ -1193,6 +1198,8 @@ body.darkMode footer ul li:nth-child(even) a:hover {
     font-size: 2.1rem;
     margin-bottom: 0.6rem;
   }
+
+
 
   .projectSectionContainer h2 {
     font-size: 3rem;
@@ -1269,8 +1276,12 @@ body.darkMode footer ul li:nth-child(even) a:hover {
   .heroSectionContent h1 {
     font-size: 2.7rem;
   }
-}
 
+    .nameHighlight {
+  font-size: 1.1rem;
+
+}
+}
 @media (max-width: 580px) {
   .project {
     padding: 1rem;
