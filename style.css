@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: url("images/cursor/cursorButtons&A.cur"), auto;
 }
 
 body {
@@ -66,7 +67,6 @@ header {
 
 button,
 a {
-  cursor: url("images/cursor/cursorButtons&A.cur"), auto;
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
 }
@@ -77,15 +77,16 @@ a {
   border-radius: 2rem;
   color: white;
   padding: 0.6rem 1.2rem;
-  transition: background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.6s ease,
+    box-shadow 0.3s ease, outline 0.9s ease;
 }
 
 #toggleModeButton:hover,
 #toggleModeButton:active {
   background-color: #ff5cf1;
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: 2px solid #ff5cf1;
+  outline-offset: 2px;
 }
 
 #mobileMenuToggle {
@@ -214,7 +215,6 @@ nav a {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-  
 }
 
 .heroSectionContent h1 {
@@ -258,7 +258,7 @@ nav a {
 }
 
 .heroSectionContent h2 {
-font-weight: 600;
+  font-weight: 600;
   color: #ffffff;
   opacity: 0;
   transform: translateY(30px);
@@ -299,11 +299,6 @@ font-weight: 600;
   border-radius: 50%;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   border: 5px solid #8338ec;
-  transition: transform 9s ease;
-}
-
-#profileImage:hover {
-  transform: rotate(360deg);
 }
 
 .aboutSectionText h2 {
@@ -381,15 +376,18 @@ font-weight: 600;
 #seeMoreButton:hover,
 #seeMoreButton:focus {
   background-color: #5b25a8;
-  transform: scale(1.09);
+  transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #5b25a8;
+  outline-offset: 2px;
 }
 
 .cvButton:hover,
-.cvButton:active {
+.cvButton:focus {
   background-color: #8338ec;
-  outline: none;
-  transform: scale(1.09);
+  outline: 2px solid #8338ec;
+  outline-offset: 2px;
+  transform: scale(1.05);
 }
 
 .overlay {
@@ -544,6 +542,7 @@ body.modalOpen {
 }
 
 .project a {
+  position: relative;
   text-decoration: none;
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold";
   color: #82f9ed;
@@ -556,8 +555,8 @@ body.modalOpen {
 
 .project a:hover,
 .project a:focus {
-  text-decoration: none;
-  color: #f017db;
+  color: rgb(251, 0, 255);
+  text-decoration: underline;
 }
 
 .projectLinks {
@@ -617,18 +616,21 @@ body.modalOpen {
 .skillsList li {
   background-color: rgba(31, 7, 95, 0.538);
   font-family: "Audiowide", Impact, "Arial Narrow Bold", sans-serif;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.7rem;
   font-weight: 800;
   text-shadow: 2px 2px 2px #7106bd;
   color: rgb(206, 254, 255);
   border-radius: 2rem;
-  background-color: background-color 0.3s ease;
+  align-items: center;
+  background-color: background-color 0.3s ease, outline 0.4s ease;
   box-shadow: 3px 3px 1px #cf04b4, 6px 6px 0px #2551e1;
 }
 
 .skillsList li:hover,
 .skillsList li:active {
   background-color: #e722b9e9;
+  outline: 2px solid #e722b9e9;
+  outline-offset: 6px;
 }
 
 .skillsSectionIntro {
@@ -641,10 +643,11 @@ body.modalOpen {
 
 .skillsIcon {
   vertical-align: middle;
-  width: 2.5rem;
+  width: auto;
   height: 2.5rem;
   margin-right: 0.7rem;
   filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.3));
+  object-fit: contain; /*Ensure they fit*/
 }
 
 .contactSectionContainer {
@@ -728,6 +731,7 @@ body.modalOpen {
   border-radius: 2rem;
   color: #fff;
   font-weight: 700;
+
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -739,6 +743,7 @@ body.modalOpen {
   transform: scale(1.1) translateY(-2px);
   border: none;
   color: #fff;
+  cursor: url("images/cursor/cursorIcon.cur"), auto;
   box-shadow: 3px 3px 1px #bd1c6d, 6px 6px 0px #1719ba;
 }
 
@@ -751,20 +756,19 @@ body.modalOpen {
 }
 
 .socialMediaIconHero {
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   cursor: url("images/cursor/cursorIcon.cur"), auto;
-  filter: invert(100%) brightness(1.2);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .socialMediaIconContact {
   margin-top: 0rem;
   margin-bottom: 1rem;
-  width: 35px;
-  height: 35px;
-  cursor: url("images/cursor/cursorIcons.cur"), auto;
-  filter: invert(100%) brightness(1.2);
+  width: 33px;
+
+  height: 33px;
+  cursor: url("images/cursor/cursorIcon.cur"), auto;
 }
 
 .socialMediaLinks a {
@@ -774,12 +778,6 @@ body.modalOpen {
 .socialMediaLinks a:hover,
 .socialMediaLinks a:focus {
   transform: scale(1.2);
-}
-
-.socialMediaLinks a:hover img,
-.socialMediaLinks a:focus img {
-  filter: invert(59%) sepia(58%) saturate(3360%) hue-rotate(180deg)
-    brightness(100%) contrast(100%);
 }
 
 #backToTopButton {
@@ -794,14 +792,15 @@ body.modalOpen {
   color: #fff;
   font-weight: 600;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.7s ease, outline 0.2s ease;
 }
 
 #backToTopButton:hover,
 #backToTopButton:focus {
   background-color: #6a00b8;
   transform: translateY(-3px);
+  outline: 2px solid #8338ec;
+  outline-offset: 2px;
 }
 
 footer {
@@ -900,13 +899,12 @@ body.darkMode #desktopMenu ul li:nth-child(odd) a:hover {
   color: #0ea3de;
 }
 
- body.darkMode #desktopMenu ul li:nth-child(even) a:hover {
-   color: #ee076f;
+body.darkMode #desktopMenu ul li:nth-child(even) a:hover {
+  color: #ee076f;
 }
 
 #mobileMenuToggle:hover {
-   color: #ee076f;
-  
+  color: #ee076f;
 }
 
 body.darkMode nav a:hover,
@@ -935,12 +933,9 @@ body.darkMode #toggleModeButton:hover {
   background-color: #5c06e69e;
 }
 
-
-
 body.darkMode .lastLetter,
 body.darkMode .accentLetters {
   color: #cd0a7c;
-
 }
 
 body.darkMode .lastLetter:hover,
@@ -948,20 +943,20 @@ body.darkMode .accentLetters:hover {
   color: #0ea3de;
 }
 
-body.darkMode #mobileMenu{
+body.darkMode #mobileMenu {
   background-color: #101010e6;
-  
 }
 
 body.darkMode #mobileMenu a:hover {
-    color: #cd0a7c;
- 
+  color: #cd0a7c;
 }
 
-
-body.darkMode .heroSectionContainer::before{  background-image: linear-gradient(rgba(237, 82, 162, 0.305), rgba(32, 10, 51, 0.135));
+body.darkMode .heroSectionContainer::before {
+  background-image: linear-gradient(
+    rgba(237, 82, 162, 0.305),
+    rgba(32, 10, 51, 0.135)
+  );
 }
-
 
 body.darkMode .overlay {
   background-color: rgba(34, 34, 34, 0.596);
@@ -975,10 +970,6 @@ body.darkMode .modalContent {
   background-color: rgba(28, 28, 28, 0.95);
 }
 
-
-
-
-
 body.darkMode .aboutSectionContainer {
   background-color: #031417b1;
   color: #f0f0f0;
@@ -991,7 +982,6 @@ body.darkMode .nameHighlight {
 body.darkMode .project {
   background-color: #060b148b;
   color: #f0f0f0;
- 
 }
 
 body.darkMode .project:hover,
@@ -1005,14 +995,11 @@ body.darkMode .project h3 {
 
 body.darkMode .project a {
   color: #4ef2fd;
-  
 }
 
 body.darkMode .project a:hover {
-    color: #cd0a7c;
+  color: #cd0a7c;
 }
-
-
 
 body.darkMode .skillsSectionContainer {
   background-color: #031417b1;
@@ -1025,13 +1012,12 @@ body.darkMode .skillsSectionIntro {
 
 body.darkMode .skillsList li {
   background-color: #540483;
-  
-  box-shadow:  6px 6px 0px #cd0a7c, 4px 4px 1px #0b0344,;
+
+  box-shadow: 6px 6px 0px #cd0a7c, 4px 4px 1px #0b0344;
 }
 
 body.darkMode .skillsList li:hover {
   background-color: #30024a;
-  
 }
 
 body.darkMode .contactSectionContainer {
@@ -1083,17 +1069,17 @@ body.darkMode .contactSubmitButton:focus {
   box-shadow: 0 6px 15px rgba(255, 30, 251, 0.7);
 }
 
-body.darkMode .socialMediaLinks a:hover img,
-.socialMediaLinks a:focus img {
-  filter: invert(25%) sepia(30%) saturate(5000%) hue-rotate(300deg)
-    brightness(100%) contrast(100%);
-}
-
-
-
 body.darkMode footer {
   background-color: #09142b5e;
   color: white;
+}
+
+body.darkMode footer ul li:nth-child(odd) a:hover {
+  color: #0ea3de;
+}
+
+body.darkMode footer ul li:nth-child(even) a:hover {
+  color: #ee076f;
 }
 
 @media (max-width: 980px) {
@@ -1137,7 +1123,7 @@ body.darkMode footer {
     margin: 0;
   }
 
-    .projectSectionContainer h2 {
+  .projectSectionContainer h2 {
     margin-top: 2rem;
   }
 }
@@ -1184,7 +1170,6 @@ body.darkMode footer {
   .heroSectionContent h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-   
   }
 
   .socialMediaIconHero {
@@ -1239,8 +1224,8 @@ body.darkMode footer {
   }
 
   .skillsIcon {
-    width: 2rem;
-    height: 2rem;
+    width: auto;
+    height: 2.2rem;
     margin-right: 0.4rem;
   }
 
@@ -1401,7 +1386,7 @@ body.darkMode footer {
   }
 
   .skillsIcon {
-    width: 1.5rem;
+    width: auto;
     height: 1.5rem;
     margin-right: 0.3rem;
   }
