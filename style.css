@@ -37,7 +37,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: blur(0px);
+  filter: blur(1px);
   opacity: 0;
   z-index: -1;
   animation: fadeIn 3s forwards;
@@ -133,7 +133,7 @@ a {
 }
 
 #desktopMenu ul li:nth-child(even) a:hover {
-  color: #e912ed;
+  color: #fb28db;
 }
 
 #mobileMenu {
@@ -630,6 +630,7 @@ body.modalOpen {
 .skillsList li:active {
   background-color: #e722b9e9;
   outline: 2px solid #e722b9e9;
+   box-shadow: none;
   outline-offset: 6px;
 }
 
@@ -931,6 +932,8 @@ body.darkMode #toggleModeButton {
 
 body.darkMode #toggleModeButton:hover {
   background-color: #5c06e69e;
+  outline: 2px solid #5c06e69e;
+
 }
 
 body.darkMode .lastLetter,
@@ -990,15 +993,21 @@ body.darkMode .project:active {
 }
 
 body.darkMode .project h3 {
-  color: rgb(245, 136, 253);
+  color: rgb(255, 68, 127);
 }
 
 body.darkMode .project a {
-  color: #4ef2fd;
+  color: #049ea9;
 }
 
 body.darkMode .project a:hover {
   color: #cd0a7c;
+}
+
+.projectImage {
+
+  border: 3px solid #cd0a7c;
+
 }
 
 body.darkMode .skillsSectionContainer {
@@ -1018,6 +1027,7 @@ body.darkMode .skillsList li {
 
 body.darkMode .skillsList li:hover {
   background-color: #30024a;
+   box-shadow: none;
 }
 
 body.darkMode .contactSectionContainer {
