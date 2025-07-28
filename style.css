@@ -247,9 +247,8 @@ nav a {
 
 .lastLetter,
 .accentLetters {
-  color: #fb28db;
+  color: #f939dc;
   transition: color 0.3s ease;
-  color: #fc5df9;
 }
 
 .lastLetter:hover,
