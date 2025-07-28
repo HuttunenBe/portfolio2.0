@@ -125,15 +125,18 @@ a {
 #desktopMenu ul li a:hover,
 #desktopMenu ul li a:focus {
   font-size: 1.1rem;
+
   transform: translateY(-4px) scale(1.2);
 }
 
 #desktopMenu ul li:nth-child(odd) a:hover {
   color: #38dbfc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #desktopMenu ul li:nth-child(even) a:hover {
-  color: #fb28db;
+  color: #fc5df9;
+  text-shadow: 2px 2px 4px rgba(25, 12, 85, 0.955);
 }
 
 #mobileMenu {
@@ -250,6 +253,7 @@ nav a {
   color: #fb28db;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: color 0.3s ease;
+  color: #fc5df9;
 }
 
 .lastLetter:hover,
@@ -266,7 +270,7 @@ nav a {
   animation-delay: 0.3s;
   font-family: "Roboto Mono", "Lucida Sans", "Lucida Sans Regular", Verdana,
     sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 
 @keyframes fadeSlideUp {
@@ -630,7 +634,7 @@ body.modalOpen {
 .skillsList li:active {
   background-color: #e722b9e9;
   outline: 2px solid #e722b9e9;
-   box-shadow: none;
+  box-shadow: none;
   outline-offset: 6px;
 }
 
@@ -837,10 +841,12 @@ footer ul li a:focus {
 
 footer ul li:nth-child(odd) a:hover {
   color: #38dbfc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer ul li:nth-child(even) a:hover {
-  color: #ff1efb;
+  color: #fc5df9;
+  text-shadow: 2px 2px 4px rgba(25, 12, 85, 0.955);
 }
 
 .reveal {
@@ -933,12 +939,11 @@ body.darkMode #toggleModeButton {
 body.darkMode #toggleModeButton:hover {
   background-color: #5c06e69e;
   outline: 2px solid #5c06e69e;
-
 }
 
 body.darkMode .lastLetter,
 body.darkMode .accentLetters {
-  color: #cd0a7c;
+  color: #fc3099;
 }
 
 body.darkMode .lastLetter:hover,
@@ -1005,9 +1010,7 @@ body.darkMode .project a:hover {
 }
 
 .projectImage {
-
   border: 3px solid #cd0a7c;
-
 }
 
 body.darkMode .skillsSectionContainer {
@@ -1027,7 +1030,7 @@ body.darkMode .skillsList li {
 
 body.darkMode .skillsList li:hover {
   background-color: #30024a;
-   box-shadow: none;
+  box-shadow: none;
 }
 
 body.darkMode .contactSectionContainer {
@@ -1138,9 +1141,8 @@ body.darkMode footer ul li:nth-child(even) a:hover {
   }
 
   .nameHighlight {
-  font-size: 1.2rem;
-
-}
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1208,8 +1210,6 @@ body.darkMode footer ul li:nth-child(even) a:hover {
     font-size: 2.1rem;
     margin-bottom: 0.6rem;
   }
-
-
 
   .projectSectionContainer h2 {
     font-size: 3rem;
@@ -1287,10 +1287,9 @@ body.darkMode footer ul li:nth-child(even) a:hover {
     font-size: 2.7rem;
   }
 
-    .nameHighlight {
-  font-size: 1.1rem;
-
-}
+  .nameHighlight {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 580px) {
   .project {
