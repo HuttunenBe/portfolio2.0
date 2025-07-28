@@ -125,18 +125,15 @@ a {
 #desktopMenu ul li a:hover,
 #desktopMenu ul li a:focus {
   font-size: 1.1rem;
-
   transform: translateY(-4px) scale(1.2);
 }
 
 #desktopMenu ul li:nth-child(odd) a:hover {
   color: #38dbfc;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #desktopMenu ul li:nth-child(even) a:hover {
   color: #fc5df9;
-  text-shadow: 2px 2px 4px rgba(25, 12, 85, 0.955);
 }
 
 #mobileMenu {
@@ -251,7 +248,6 @@ nav a {
 .lastLetter,
 .accentLetters {
   color: #fb28db;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: color 0.3s ease;
   color: #fc5df9;
 }
@@ -331,7 +327,6 @@ nav a {
   border-radius: 2rem;
   color: #e0e0e0;
   max-width: 640px;
-
   text-align: left;
   font-size: 1.05rem;
 }
@@ -841,12 +836,12 @@ footer ul li a:focus {
 
 footer ul li:nth-child(odd) a:hover {
   color: #38dbfc;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer ul li:nth-child(even) a:hover {
   color: #fc5df9;
-  text-shadow: 2px 2px 4px rgba(25, 12, 85, 0.955);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .reveal {
@@ -910,7 +905,7 @@ body.darkMode #desktopMenu ul li:nth-child(even) a:hover {
   color: #ee076f;
 }
 
-#mobileMenuToggle:hover {
+body.darkMode #mobileMenuToggle:hover {
   color: #ee076f;
 }
 
