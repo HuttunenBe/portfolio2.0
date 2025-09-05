@@ -8,7 +8,7 @@ const menuToggle = document.querySelector("#mobileMenuToggle");
 const mobileMenu = document.querySelector("#mobileMenu");
 const revealElements = document.querySelectorAll(".reveal");
 
-const scrollFunction = () => {
+const scrollFunction = () => { 
   if (
     document.body.scrollTop > 200 ||
     document.documentElement.scrollTop > 200
