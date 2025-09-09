@@ -9,7 +9,7 @@ I did face some challenges, such as animations overlapping each others and ensur
 ## 🌐 Live Demo
  
 You can check my portfolio page at Vercel:  
-[**Portfolio on Vercel**](https://beniitta-huttunen.com/) 🚀
+[**Portfolio on Vercel**](www://beniitta-huttunen.com/) 🚀
 
 You can find the old portfolio here: <br>
 [**Old Portfolio on Vercel**](https://portfolio-liart-five-18.vercel.app/)
