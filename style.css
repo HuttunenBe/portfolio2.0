@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
   cursor: url("images/cursor/cursorButtons&A.cur"), auto;
+  
 }
 
 body {
@@ -180,6 +181,7 @@ nav a {
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 0.5rem 1rem;
+    cursor: url("images/cursor/LinkSelect.cur"), auto;
 }
 
 .container {
@@ -709,6 +711,7 @@ body.modalOpen {
   font-size: 1rem;
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold";
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: url("images/cursor/curson2.png"), auto;
 }
 
 .contactFormGroup input:focus,
@@ -738,8 +741,8 @@ body.modalOpen {
 .contactSubmitButton:hover,
 .contactSubmitButton:focus {
   background-color: #ff5cf1;
-  transform: scale(1.1) translateY(-2px);
   border: none;
+  padding: 1.1rem 1.9rem;
   color: #fff;
   cursor: url("images/cursor/cursorIcon.cur"), auto;
   box-shadow: 3px 3px 1px #bd1c6d, 6px 6px 0px #1719ba;
