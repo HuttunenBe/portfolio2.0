@@ -6,8 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: url("images/cursor/cursorButtons&A.cur"), auto;
-  
+  cursor: url("images/cursor/cursorHtml.cur"), auto;
 }
 
 body {
@@ -80,6 +79,7 @@ a {
   padding: 0.6rem 1.2rem;
   transition: background-color 0.3s ease, transform 0.6s ease,
     box-shadow 0.3s ease, outline 0.9s ease;
+  cursor: url("images/cursor/cursorButtons.cur"), auto;
 }
 
 #toggleModeButton:hover,
@@ -181,7 +181,6 @@ nav a {
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 0.5rem 1rem;
-    cursor: url("images/cursor/LinkSelect.cur"), auto;
 }
 
 .container {
@@ -711,7 +710,7 @@ body.modalOpen {
   font-size: 1rem;
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold";
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    cursor: url("images/cursor/curson2.png"), auto;
+  cursor: url("images/cursor/textCursor.png"), auto;
 }
 
 .contactFormGroup input:focus,
@@ -744,7 +743,7 @@ body.modalOpen {
   border: none;
   padding: 1.1rem 1.9rem;
   color: #fff;
-  cursor: url("images/cursor/cursorIcon.cur"), auto;
+  cursor: url("images/cursor/cursorButtons.cur"), auto;
   box-shadow: 3px 3px 1px #bd1c6d, 6px 6px 0px #1719ba;
 }
 
@@ -759,7 +758,6 @@ body.modalOpen {
 .socialMediaIconHero {
   width: 33px;
   height: 33px;
-  cursor: url("images/cursor/cursorIcon.cur"), auto;
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
@@ -767,9 +765,7 @@ body.modalOpen {
   margin-top: 0rem;
   margin-bottom: 1rem;
   width: 33px;
-
   height: 33px;
-  cursor: url("images/cursor/cursorIcon.cur"), auto;
 }
 
 .socialMediaLinks a {
@@ -792,6 +788,7 @@ body.modalOpen {
   border-radius: 3rem;
   color: #fff;
   font-weight: 600;
+  cursor: url("images/cursor/cursorButtons.cur"), auto;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease, transform 0.7s ease, outline 0.2s ease;
 }
