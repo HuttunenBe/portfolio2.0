@@ -1,4 +1,4 @@
-# 🚀 Portfolio Website
+# 🚀 Portfolio Website 
 
 Welcome to my portfolio! Creating a portfolio page was part of my CSS course, but I wasn’t fully satisfied with how to original one turned out. So I decided to start over with a better design and more personal feel. This project gave me opportunity to dive deeper into animations. It’s amazing to see how few months really make a difference in CSS skills! ✨
 
