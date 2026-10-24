@@ -299,6 +299,8 @@ nav a {
   border-radius: 50%;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   border: 5px solid #8338ec;
+    object-position: center 5%;
+     
 }
 
 .aboutSectionText h2 {
