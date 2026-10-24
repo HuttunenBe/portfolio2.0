@@ -7,11 +7,12 @@
 html {
   scroll-behavior: smooth;
   cursor: url("images/cursor/cursorHtml.cur"), auto;
-} 
+}
 
 body {
   background-color: #f7f3fb;
-  background-image: url("images/backgrounds/background1.webp"),
+  background-image:
+    url("images/backgrounds/background1.webp"),
     url("images/backgrounds/background2.webp");
   background-size: cover;
   background-position: left bottom;
@@ -21,13 +22,16 @@ body {
   line-height: 1.6;
   opacity: 1;
   font-family: "Manrope", "Lucida Sans", Verdana, sans-serif;
-  transition: background-color 0.9s ease, color 0.3s ease;
+  transition:
+    background-color 0.9s ease,
+    color 0.3s ease;
 }
 
 body::before {
   position: fixed;
   content: "";
-  background-image: url("images/backgrounds/background1.webp"),
+  background-image:
+    url("images/backgrounds/background1.webp"),
     url("images/backgrounds/background2.webp");
   background-size: cover;
   background-position: 20% 90%;
@@ -37,7 +41,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: blur(2px);
+  /*filter: blur(2px);*/
   opacity: 0;
   z-index: -1;
   animation: fadeIn 3s forwards;
@@ -61,14 +65,16 @@ header {
   background-color: #14015e68;
   padding: 1rem 1.7rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.9s ease, color 0.6s ease;
+  transition:
+    background-color 0.9s ease,
+    color 0.6s ease;
   backdrop-filter: blur(20px);
 }
 
 button,
 a {
-  font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
+  font-family:
+    "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 #toggleModeButton {
@@ -77,8 +83,11 @@ a {
   border-radius: 2rem;
   color: white;
   padding: 0.6rem 1.2rem;
-  transition: background-color 0.3s ease, transform 0.6s ease,
-    box-shadow 0.3s ease, outline 0.9s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.6s ease,
+    box-shadow 0.3s ease,
+    outline 0.9s ease;
   cursor: url("images/cursor/cursorButtons.cur"), auto;
 }
 
@@ -96,7 +105,9 @@ a {
   border: none;
   color: #f0f0f0;
   padding: 0.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 #mobileMenuToggle .material-icons {
@@ -120,7 +131,9 @@ a {
 }
 
 #desktopMenu ul li a {
-  transition: color 0.3s ease, font-size 0.3s ease;
+  transition:
+    color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 #desktopMenu ul li a:hover,
@@ -179,7 +192,9 @@ nav a {
   color: #f0f0f0;
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
   padding: 0.5rem 1rem;
 }
 
@@ -196,7 +211,8 @@ nav a {
   text-align: center;
   max-width: 1100px;
   min-height: 450px;
-  background-image: url("images/backgrounds/background1.webp"),
+  background-image:
+    url("images/backgrounds/background1.webp"),
     url("images/backgrounds/heroImageBackup.webp");
   background-size: cover;
   background-position: top left;
@@ -264,8 +280,8 @@ nav a {
   transform: translateY(30px);
   animation: fadeSlideUp 1s ease-out forwards;
   animation-delay: 0.3s;
-  font-family: "Roboto Mono", "Lucida Sans", "Lucida Sans Regular", Verdana,
-    sans-serif;
+  font-family:
+    "Roboto Mono", "Lucida Sans", "Lucida Sans Regular", Verdana, sans-serif;
   font-size: 2.5rem;
 }
 
@@ -288,7 +304,9 @@ nav a {
   border-radius: 1.5rem;
   color: #e0e0e0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.9s ease, color 0.6s ease;
+  transition:
+    background-color 0.9s ease,
+    color 0.6s ease;
   flex-wrap: nowrap;
 }
 
@@ -299,8 +317,7 @@ nav a {
   border-radius: 50%;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   border: 5px solid #8338ec;
-    object-position: center 5%;
-     
+  object-position: center 5%;
 }
 
 .aboutSectionText h2 {
@@ -396,7 +413,7 @@ nav a {
   justify-content: center;
   align-items: center;
   background-color: rgba(142, 119, 255, 0.247);
-  backdrop-filter: blur(4px);
+  /*backdrop-filter: blur(4px);*/
   position: fixed;
   width: 100%;
   height: 100%;
@@ -471,7 +488,9 @@ body.modalOpen {
   border: none;
   font-size: 1.7rem;
   color: #ffffff;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
 }
 
 #modalCloseButton {
@@ -517,7 +536,9 @@ body.modalOpen {
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project:hover {
@@ -576,9 +597,6 @@ body.modalOpen {
   display: block;
 }
 
-
-
-
 .skillsSectionContainer {
   max-width: 1000px;
   margin: 3rem auto;
@@ -588,7 +606,9 @@ body.modalOpen {
   text-align: center;
   border-radius: 1.5rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.9s ease, color 0.6s ease;
+  transition:
+    background-color 0.9s ease,
+    color 0.6s ease;
   flex-wrap: wrap;
 }
 
@@ -626,8 +646,12 @@ body.modalOpen {
   color: rgb(206, 254, 255);
   border-radius: 2rem;
   align-items: center;
-  background-color: background-color 0.3s ease, outline 0.4s ease;
-  box-shadow: 3px 3px 1px #cf04b4, 6px 6px 0px #2551e1;
+  background-color:
+    background-color 0.3s ease,
+    outline 0.4s ease;
+  box-shadow:
+    3px 3px 1px #cf04b4,
+    6px 6px 0px #2551e1;
 }
 
 .skillsList li:hover,
@@ -654,9 +678,6 @@ body.modalOpen {
   filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.3));
   object-fit: contain; /*Ensure they fit*/
 }
-
-
-
 
 .contactSectionContainer {
   display: flex;
@@ -717,7 +738,10 @@ body.modalOpen {
   color: #eee;
   font-size: 1rem;
   font-family: "Orbitron", Impact, Haettenschweiler, "Arial Narrow Bold";
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
   cursor: url("images/cursor/textCursor.png"), auto;
 }
 
@@ -740,7 +764,9 @@ body.modalOpen {
   border-radius: 2rem;
   color: #fff;
   font-weight: 700;
-  transition: background-color 0.3s ease, transform 0.2s ease,
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
@@ -752,7 +778,9 @@ body.modalOpen {
   padding: 1.1rem 1.9rem;
   color: #fff;
   cursor: url("images/cursor/cursorButtons.cur"), auto;
-  box-shadow: 3px 3px 1px #bd1c6d, 6px 6px 0px #1719ba;
+  box-shadow:
+    3px 3px 1px #bd1c6d,
+    6px 6px 0px #1719ba;
 }
 
 .socialMediaLinks {
@@ -766,7 +794,9 @@ body.modalOpen {
 .socialMediaIconHero {
   width: 33px;
   height: 33px;
-  transition: filter 0.3s ease, transform 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
 }
 
 .socialMediaIconContact {
@@ -777,7 +807,9 @@ body.modalOpen {
 }
 
 .socialMediaLinks a {
-  transition: filter 0.6s ease, transform 0.6s ease;
+  transition:
+    filter 0.6s ease,
+    transform 0.6s ease;
 }
 
 .socialMediaLinks a:hover,
@@ -798,7 +830,10 @@ body.modalOpen {
   font-weight: 600;
   cursor: url("images/cursor/cursorButtons.cur"), auto;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease, transform 0.7s ease, outline 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.7s ease,
+    outline 0.2s ease;
 }
 
 #backToTopButton:hover,
@@ -830,7 +865,10 @@ footer ul {
 footer ul li a {
   font-size: 1.2rem;
   display: inline-block;
-  transition: color 0.3s ease, font-size 0.3s ease, transform 0.9s;
+  transition:
+    color 0.3s ease,
+    font-size 0.3s ease,
+    transform 0.9s;
 }
 
 footer ul li a:hover,
@@ -853,7 +891,9 @@ footer ul li:nth-child(even) a:hover {
 .reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .reveal.visible.fadeIn {
@@ -893,7 +933,8 @@ body.darkMode {
 }
 
 body.darkMode::before {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(32, 10, 51, 0.905)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(32, 10, 51, 0.905)),
     url("images/backgrounds/background1.webp"),
     url("images/backgrounds/background2.webp");
 }
@@ -1026,7 +1067,9 @@ body.darkMode .skillsSectionIntro {
 body.darkMode .skillsList li {
   background-color: #540483;
 
-  box-shadow: 6px 6px 0px #cd0a7c, 4px 4px 1px #0b0344;
+  box-shadow:
+    6px 6px 0px #cd0a7c,
+    4px 4px 1px #0b0344;
 }
 
 body.darkMode .skillsList li:hover {
@@ -1053,12 +1096,15 @@ body.darkMode .contactFormGroup textarea:focus {
 }
 
 body.darkMode .contactSubmitButton {
-  background-image: linear-gradient(#000000),
+  background-image:
+    linear-gradient(#000000),
     linear-gradient(45deg, #ed08e9, #350aa3, #be30e9, #388dfc);
   background-size: 200% 200%;
   background-clip: padding-box, border-box;
   color: #ffffff;
-  transition: background-image 0.4s ease, transform 0.3s ease,
+  transition:
+    background-image 0.4s ease,
+    transform 0.3s ease,
     box-shadow 0.4s ease;
   animation: borderMove 2s linear infinite;
 }
@@ -1098,12 +1144,14 @@ body.darkMode footer ul li:nth-child(even) a:hover {
 
 @media (max-width: 980px) {
   body {
-    background-image: url("images/backgrounds/background1Medium.webp"),
+    background-image:
+      url("images/backgrounds/background1Medium.webp"),
       url("images/backgrounds/background2Medium.webp");
   }
 
   body::before {
-    background-image: url("images/backgrounds/background1Medium.webp"),
+    background-image:
+      url("images/backgrounds/background1Medium.webp"),
       url("images/backgrounds/background2Medium.webp");
   }
 
@@ -1275,12 +1323,14 @@ body.darkMode footer ul li:nth-child(even) a:hover {
 }
 @media (max-width: 680px) {
   body {
-    background-image: url("images/backgrounds/background1Small.webp"),
+    background-image:
+      url("images/backgrounds/background1Small.webp"),
       url("/images/backgrounds/background2Small.webp");
   }
 
   body::before {
-    background-image: url("images/backgrounds/background1Small.webp"),
+    background-image:
+      url("images/backgrounds/background1Small.webp"),
       url("/images/backgrounds/background2Small.webp");
   }
 
@@ -1443,6 +1493,3 @@ body.darkMode footer ul li:nth-child(even) a:hover {
     gap: 1rem;
   }
 }
-
-
-
