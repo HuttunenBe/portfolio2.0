@@ -9,7 +9,12 @@ html {
   cursor: url("images/cursor/cursorHtml.cur"), auto;
 }
 
+main {
+  padding-top: 90px;
+}
+
 body {
+  margin: 0;
   background-color: #f7f3fb;
   background-image:
     url("images/backgrounds/background1.webp"),
@@ -59,11 +64,17 @@ body::after {
 }
 
 header {
+  box-sizing: border-box;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   background-color: #14015e68;
   padding: 1rem 1.7rem;
+  top: 0;
+  left: 0;
+  width: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition:
     background-color 0.9s ease,
