@@ -574,6 +574,9 @@ body.modalOpen {
   display: block;
 }
 
+
+
+
 .skillsSectionContainer {
   max-width: 1000px;
   margin: 3rem auto;
@@ -649,6 +652,9 @@ body.modalOpen {
   filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.3));
   object-fit: contain; /*Ensure they fit*/
 }
+
+
+
 
 .contactSectionContainer {
   display: flex;
@@ -1435,3 +1441,6 @@ body.darkMode footer ul li:nth-child(even) a:hover {
     gap: 1rem;
   }
 }
+
+
+
